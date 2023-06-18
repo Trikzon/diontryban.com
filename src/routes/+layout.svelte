@@ -11,6 +11,7 @@
             }
         }
     </script>
+    <meta name="google" content="notranslate">
 </svelte:head>
 
 <script lang="ts">
