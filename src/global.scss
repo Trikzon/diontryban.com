@@ -1,4 +1,4 @@
-@use "./rose_pine_theme.scss";
+@use "./themes/rose_pine.scss";
 
 :root {
     // Transition speed
@@ -9,6 +9,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     background-color: var(--rp-base);
     color: var(--rp-text);
