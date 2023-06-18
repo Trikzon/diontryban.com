@@ -1,0 +1,42 @@
+@use "./rose_pine_theme.scss";
+
+:root {
+    // Transition speed
+    --trans-speed: 250ms;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    background-color: var(--rp-base);
+    color: var(--rp-text);
+    transition: background-color var(--trans-speed) linear;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--rp-text);
+    font-size: 1rem;
+
+    &:not(:hover).plain {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: var(--rp-foam);
+    }
+
+    &:active {
+        background-color: var(--rp-highlight-low);
+    }
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+    transition: color var(--trans-speed) linear;
+}
+
+.muted {
+    color: var(--rp-muted);
+}
