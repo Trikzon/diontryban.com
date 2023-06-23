@@ -25,9 +25,6 @@
 <style lang="scss">
     footer {
         flex-grow: 0;
-        border-top: 2px solid var(--rp-overlay);
-
-        transition: border-color var(--trans-speed) linear;
 
         ul {
             list-style: none;

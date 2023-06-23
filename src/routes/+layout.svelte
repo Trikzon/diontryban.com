@@ -24,11 +24,11 @@
 </script>
 
 <div>
-    {#if $page.url.pathname !== "/"}
+    <!-- {#if $page.url.pathname !== "/"}
         <aside>
             <p>Contact Card</p>
         </aside>
-    {/if}
+    {/if} -->
 
     <div id="wrapper">
         <header>
@@ -48,7 +48,7 @@
         max-width: 50rem;
         min-height: 100dvh;
         background-color: var(--rp-surface);
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+        box-shadow: var(--shadow);
 
         display: flex;
         flex-direction: column;

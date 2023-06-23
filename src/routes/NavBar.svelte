@@ -22,9 +22,6 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 3rem 0 1.5rem 0;
-        border-bottom: 2px solid var(--rp-overlay);
-
-        transition: border-color var(--trans-speed) linear;
 
         a {
             font-size: 1.25rem;

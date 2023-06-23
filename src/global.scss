@@ -1,8 +1,8 @@
 @use "./themes/rose_pine.scss";
 
 :root {
-    // Transition speed
     --trans-speed: 250ms;
+    --shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 html, body {
@@ -21,6 +21,7 @@ a {
     text-decoration: underline;
     color: var(--rp-text);
     font-size: 1rem;
+    cursor: pointer;
 
     &:not(:hover).plain {
         text-decoration: none;
@@ -35,10 +36,47 @@ a {
     }
 }
 
-p, a, h1, h2, h3, h4, h5, h6 {
+p, a, h1, h2, h3, h4, h5, h6, li {
     transition: color var(--trans-speed) linear;
 }
 
 .muted {
     color: var(--rp-muted);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--rp-love);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--rp-rose);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--rp-foam);
+}
+
+p, li {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+section, footer {
+    border-top: 2px solid var(--rp-overlay);
+    transition: border-color var(--trans-speed) linear;
 }
