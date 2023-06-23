@@ -1,4 +1,5 @@
 @use "./themes/rose_pine.scss";
+@use "./themes/prism_darkula.css";
 
 :root {
     --trans-speed: 250ms;
@@ -30,10 +31,6 @@ a {
     &:hover {
         color: var(--rp-foam);
     }
-
-    &:active {
-        background-color: var(--rp-highlight-low);
-    }
 }
 
 p, a, h1, h2, h3, h4, h5, h6, li {
@@ -47,28 +44,27 @@ p, a, h1, h2, h3, h4, h5, h6, li {
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    margin: 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     color: var(--rp-love);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    margin: 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     color: var(--rp-rose);
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     color: var(--rp-foam);
 }
 
 p, li {
     font-size: 1rem;
     line-height: 1.25rem;
-    margin: 0;
 }
 
 ul {
@@ -76,7 +72,31 @@ ul {
     padding-left: 1.5rem;
 }
 
-section, footer {
+article, section, footer {
     border-top: 2px solid var(--rp-overlay);
     transition: border-color var(--trans-speed) linear;
+}
+
+iframe, video {
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 100%;
+}
+
+pre {
+    border-radius: 12px;
+    background-color: var(--rp-overlay);
+    transition: background-color var(--trans-speed) linear;
+
+    code {
+        font-size: 0.9rem;
+    }
+}
+
+:not(pre) > code {
+    border-radius: 4px;
+    background-color: var(--rp-overlay);
+    transition: background-color var(--trans-speed) linear;
+    padding: 0 0.25rem;
+    font-size: 0.9rem;
 }

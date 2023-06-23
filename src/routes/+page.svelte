@@ -7,9 +7,11 @@
     <div class="text">
         <h1>Dion Tryban</h1>
         <h2>Computer Science Student</h2>
-        <p>Hello! I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a>.</p>
-        <p>I develop applications, video games, and Minecraft mods.</p>
-        <p>I am searching for a 2024 summer internship.</p>
+        <p>
+            Hello! I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a>.<br/>
+            I develop applications, video games, and Minecraft mods.<br/>
+            I am searching for a 2024 summer internship.
+        </p>
     </div>
 </section>
 <section id="projects">
@@ -25,6 +27,10 @@
     #about {
         display: flex;
         padding: 1rem 0;
+
+        h1, h2 {
+            margin: 0;
+        }
 
         img {
             --image-size: 14rem;

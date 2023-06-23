@@ -9,7 +9,7 @@
         &copy 2023 Dion Tryban — Powered by
         <a class="muted" href="https://kit.svelte.dev">SvelteKit</a>, 
         <a class="muted" href="https://www.typescriptlang.org">TypeScript</a>, and 
-        <a class="muted" href="https://sass-lang.com">SCSS</a>
+        <a class="muted" href="https://mdsvex.com">mdsvex</a>
     </p>
     <div id="thin">
         <p class="muted">&copy 2023 Dion Tryban</p>
@@ -17,7 +17,7 @@
             Powered by
             <a class="muted" href="https://kit.svelte.dev">SvelteKit</a>, 
             <a class="muted" href="https://www.typescriptlang.org">TypeScript</a>, and 
-            <a class="muted" href="https://sass-lang.com">SCSS</a>
+            <a class="muted" href="https://mdsvex.com">mdsvex</a>
         </p>
     </div>
 </footer>
@@ -25,6 +25,7 @@
 <style lang="scss">
     footer {
         flex-grow: 0;
+        margin-top: 1rem;
 
         ul {
             list-style: none;

@@ -1,3 +1,12 @@
+<script lang="ts">
+    import "../global.scss";
+
+    // import { page } from "$app/stores";
+
+    import Footer from "./Footer.svelte";
+    import NavBar from "./NavBar.svelte";
+</script>
+
 <svelte:head>
     <script>
         const theme = localStorage.getItem("theme");
@@ -13,15 +22,6 @@
     </script>
     <meta name="google" content="notranslate">
 </svelte:head>
-
-<script lang="ts">
-    import "../global.scss";
-
-    import { page } from "$app/stores";
-
-    import Footer from "./Footer.svelte";
-    import NavBar from "./NavBar.svelte";
-</script>
 
 <div>
     <!-- {#if $page.url.pathname !== "/"}

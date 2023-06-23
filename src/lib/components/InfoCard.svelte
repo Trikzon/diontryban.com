@@ -3,11 +3,12 @@
     export let dateRange: string;
     export let logo: string;
     export let url: string | undefined = undefined;
+    export let external: boolean = false;
 </script>
 
 <div id="card">
     {#if url}
-        <a id="logo" href={url} target="_blank">
+        <a id="logo" href={url} target={external ? "_blank" : "_self"}>
             <img src={logo} alt="{name} Logo">
         </a>
     {:else}
@@ -18,7 +19,7 @@
     <div id="info">
         <div id="info-title">
             {#if url}
-                <a class="plain" href={url} target="_blank">
+                <a class="plain" href={url} target={external ? "_blank" : "_self"}>
                     <h3>{name}</h3>
                 </a>
             {:else}
