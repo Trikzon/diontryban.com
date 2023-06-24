@@ -21,7 +21,16 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 3rem 0 1.5rem 0;
+        padding: 2rem 0 1.5rem 0;
+
+        @media (max-width: 450px) {
+            flex-direction: column;
+            align-items: center;
+
+            .left {
+                margin-bottom: 1rem;
+            }
+        }
 
         a {
             font-size: 1.25rem;

@@ -42,12 +42,12 @@
             text-align: center;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 540px) {
             #wide {
                 display: none;
             }
         }
-        @media (min-width: 501px) {
+        @media (min-width: 541px) {
             #thin {
                 display: none;
             }
