@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import { escapeSvelte, mdsvex } from 'mdsvex';
-import shiki from 'shiki';
+import { mdsvex } from 'mdsvex';
+import rehypeSlug from 'rehype-slug';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,7 +16,8 @@ const config = {
 				// return `{@html \`${html}\`}`;
 				return lang;
 			}
-		}
+		},
+		rehypePlugins: [rehypeSlug]
 	})],
 
 	extensions: ['.svelte', '.md'],
