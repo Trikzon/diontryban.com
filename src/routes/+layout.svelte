@@ -2,6 +2,7 @@
     import "../global.scss";
 
     import Footer from "./Footer.svelte";
+    import InDevBanner from "./InDevBanner.svelte";
     import NavBar from "./NavBar.svelte";
 </script>
 
@@ -22,10 +23,9 @@
 </svelte:head>
 
 <div>
+    <InDevBanner/>
     <div id="wrapper">
-        <header>
-            <NavBar/>
-        </header>
+        <header><NavBar/></header>
         <main>
             <slot></slot>
         </main>
