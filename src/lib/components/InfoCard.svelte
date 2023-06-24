@@ -57,6 +57,10 @@
 
             margin-right: 1rem;
 
+            @media (max-width: 480px) {
+                display: none;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -66,6 +70,14 @@
         #info-title {
             display: flex;
             justify-content: space-between;
+
+            @media (max-width: 800px) {
+                flex-direction: column;
+            }
+
+            h3 {
+                margin: 0;
+            }
 
             #date-range {
                 margin: 0.5rem 0;
@@ -79,9 +91,18 @@
                 display: flex;
                 justify-content: space-between;
 
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                }
+
                 #right-column {
                     flex-shrink: 0;
                     text-align: right;
+
+                    @media (max-width: 800px) {
+                        text-align: left;
+                        margin-top: 0.5rem;
+                    }
                 }
             }
         }

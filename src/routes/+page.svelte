@@ -28,6 +28,12 @@
         display: flex;
         padding: 1rem 0;
 
+        @media (max-width: 810px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         h1, h2 {
             margin: 0;
         }
