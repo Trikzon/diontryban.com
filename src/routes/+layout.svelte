@@ -1,8 +1,6 @@
 <script lang="ts">
     import "../global.scss";
 
-    // import { page } from "$app/stores";
-
     import Footer from "./Footer.svelte";
     import NavBar from "./NavBar.svelte";
 </script>
@@ -24,12 +22,6 @@
 </svelte:head>
 
 <div>
-    <!-- {#if $page.url.pathname !== "/"}
-        <aside>
-            <p>Contact Card</p>
-        </aside>
-    {/if} -->
-
     <div id="wrapper">
         <header>
             <NavBar/>
