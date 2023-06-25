@@ -1,5 +1,5 @@
 <script lang="ts">
-    import InfoCard from "$lib/components/InfoCard.svelte";
+    import { InfoCard } from "$lib/components"
 </script>
 
 <svelte:head>

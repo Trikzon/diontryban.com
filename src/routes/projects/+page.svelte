@@ -1,7 +1,7 @@
 <script lang="ts">
-    import InfoCard from "$lib/components/InfoCard.svelte";
     import { formatDate } from "$lib/utils";
     import type { ProjectMetadata } from "$lib/types";
+    import { InfoCard } from "$lib/components";
 
     export let data: { projects: ProjectMetadata[] };
 </script>
