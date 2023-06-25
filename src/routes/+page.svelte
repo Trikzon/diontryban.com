@@ -1,3 +1,10 @@
+<script lang="ts">
+    import ProjectList from "$lib/components/ProjectList.svelte";
+import type { ProjectMetadata } from "$lib/types";
+
+    export let data: { projects: ProjectMetadata[] };
+</script>
+
 <svelte:head>
     <title>Dion Tryban</title>
 </svelte:head>
@@ -16,6 +23,7 @@
 </section>
 <section id="projects">
     <h1>Latest Projects</h1>
+    <ProjectList projects={data.projects}/>
     <p><a href="/projects">View more</a></p>
 </section>
 <section id="blog">

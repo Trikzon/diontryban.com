@@ -1,7 +1,6 @@
 <script lang="ts">
-    import { formatDate } from "$lib/utils";
-    import type { ProjectMetadata } from "$lib/types";
-    import { InfoCard } from "$lib/components";
+    import ProjectList from "$lib/components/ProjectList.svelte";
+import type { ProjectMetadata } from "$lib/types";
 
     export let data: { projects: ProjectMetadata[] };
 </script>
@@ -12,16 +11,5 @@
 
 <section>
     <h1>Projects</h1>
-    {#each data.projects as project}
-        <InfoCard 
-            name={project.title}
-            dateRange="{formatDate(project.startDate)} — {project.endDate ? formatDate(project.endDate) : "Present"}"
-            logo={project.logo || "/default.svg"}
-            url="/projects/{project.slug}"
-        >
-            <span slot="left-info">
-                {project.description}
-            </span>
-        </InfoCard>
-    {/each}
+    <ProjectList projects={data.projects}/>
 </section>
