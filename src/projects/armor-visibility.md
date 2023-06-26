@@ -1,8 +1,11 @@
 ---
 title: "Armor Visibility"
-description: "A Minecraft mod that lets you toggle the rendering of armor (and elytra) with a keyboard shortcut."
+description: "Lets you toggle the rendering of armor with a keyboard shortcut."
 logo: "https://github.com/Trikzon/armor-visibility/blob/1.20/Common/src/main/resources/assets/armor_visibility/icon.png?raw=true"
 startDate: "2020-06-21"
+tags:
+  - "minecraft-mod"
+  - "java"
 ---
 
 View yours and others' skins through armor.

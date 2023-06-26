@@ -1,6 +1,7 @@
-import { error } from '@sveltejs/kit';
+import { error } from "@sveltejs/kit";
+import type { PageLoad } from "./$types";
 
-export async function load({ params }) {
+export const load = (async ({ params }) => {
     try {
         const project = await import(`../../../projects/${params.slug}.md`);
         return {
@@ -10,4 +11,4 @@ export async function load({ params }) {
     } catch (e) {
         throw error(404, `Could not find project ${params.slug}.`);
     }
-}
+}) satisfies PageLoad;

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import ProjectList from "$lib/components/ProjectList.svelte";
-import type { ProjectMetadata } from "$lib/types";
+    import { ProjectList } from "$lib/components";
+    import type { ProjectMetadata } from "$lib/types";
 
     export let data: { projects: ProjectMetadata[] };
 </script>

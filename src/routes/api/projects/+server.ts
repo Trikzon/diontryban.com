@@ -1,5 +1,5 @@
 import { json } from "@sveltejs/kit";
-import type { ProjectMetadata } from "$lib/types";
+import { PROJECT_TAGS, type ProjectMetadata } from "$lib/types";
 
 export async function GET() {
     let projects: ProjectMetadata[] = [];
@@ -8,12 +8,27 @@ export async function GET() {
 
     for (const path in paths) {
         const file = paths[path];
-        const slug = path.split("/")?.pop()?.replace(".md", "");
+        if (file && typeof file === "object" && "metadata" in file) {
+            if (file.metadata && typeof file.metadata === "object") {
+                if ("title" in file.metadata && "description" in file.metadata && "startDate" in file.metadata) {
+                    const slug = path.split("/")?.pop()?.replace(".md", "");
+                    if (slug) {
+                        const metadata = file.metadata as Omit<ProjectMetadata, "slug">;
+                        const post = { ...metadata, slug } satisfies ProjectMetadata;
 
-        if (file && typeof file === "object" && "metadata" in file && slug) {
-            const metadata = file.metadata as Omit<ProjectMetadata, "slug">;
-            const post = { ...metadata, slug } satisfies ProjectMetadata;
-            projects.push(post);
+                        // Sort tags alphabetically.
+                        if (metadata.tags) {
+                            metadata.tags = metadata.tags.sort((a, b) => {
+                                const nameA = (PROJECT_TAGS[a] ?? a).toLowerCase();
+                                const nameB = (PROJECT_TAGS[b] ?? b).toLowerCase();
+                                return (nameA < nameB) ? -1 : (nameA > nameB) ? 1 : 0;
+                            });
+                        };
+
+                        projects.push(post);
+                    }
+                }
+            }
         }
     }
 

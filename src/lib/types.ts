@@ -2,15 +2,21 @@ export type ProjectMetadata = {
     slug: string;
     title: string;
     description: string;
-    logo: string | undefined;
+    logo?: string;
     startDate: string;
-    endDate: string | undefined;
-    tags: string[];
-    github: string | undefined;
-    mcmod: MCModMetadata | undefined;
+    endDate?: string;
+    tags?: string[];
+    github?: string;
+    mcmod?: {
+        modrinthSlug: string;
+        curseForgeId: string;
+    };
 };
 
-export type MCModMetadata = {
-    modrinthSlug: string;
-    curseForgeId: string;
+export const PROJECT_TAGS: { [tag: string]: string } = {
+    "java": "Java",
+    "minecraft-mod": "Minecraft Mod",
+    "sveltekit": "SvelteKit",
+    "typescript": "TypeScript",
+    "website": "Website",
 };
