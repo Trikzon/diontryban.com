@@ -100,3 +100,22 @@ pre {
     padding: 0 0.25rem;
     font-size: 0.9rem;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--rp-overlay);
+
+    &, td, th {
+        transition: border-color var(--trans-speed) linear;
+    }
+
+    td, th {
+        border: 2px solid var(--rp-overlay);
+    }
+
+    td {
+        padding: 0.25rem 0.5rem;
+    }
+}
+

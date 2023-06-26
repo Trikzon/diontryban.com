@@ -10,7 +10,7 @@
     <InfoCard 
         name={project.title}
         dateRange="{formatDate(project.startDate)} — {project.endDate ? formatDate(project.endDate) : "Present"}"
-        logo={project.logo || "/default.svg"}
+        logo={project.logo || "/projects/default.svg"}
         url="/projects/{project.slug}"
     >
         <span slot="left-info">

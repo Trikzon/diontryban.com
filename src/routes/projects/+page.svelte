@@ -95,9 +95,11 @@
     </div>
     <div id="tags">
         {#each Object.keys(PROJECT_TAGS) as tag}
-            <button name={tag} class="search-tag plain" class:selected={selectedTags.includes(tag)} on:click={onTagClick}>
-                #{PROJECT_TAGS[tag] ?? tag} ({countProjectsByTag(tag)})
-            </button>
+            {#if countProjectsByTag(tag) !== 0}
+                <button name={tag} class="search-tag plain" class:selected={selectedTags.includes(tag)} on:click={onTagClick}>
+                    {PROJECT_TAGS[tag] ?? tag} ({countProjectsByTag(tag)})
+                </button>
+            {/if}
         {/each}
     </div>
     <section>
@@ -138,7 +140,7 @@
             padding: 0.25rem 0.5rem;
             font-size: 1rem;
             color: var(--rp-text);
-            margin-left: 1rem;
+            margin-left: 0.5rem;
             cursor: pointer;
 
             transition:
