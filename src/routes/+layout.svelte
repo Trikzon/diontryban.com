@@ -20,6 +20,7 @@
         }
     </script>
     <meta name="google" content="notranslate">
+    <meta name="darkreader-lock">
 </svelte:head>
 
 <div>
