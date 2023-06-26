@@ -131,6 +131,11 @@
                 color: var(--rp-muted);
                 transition: color var(--trans-speed) linear;
             }
+
+            &:focus {
+                outline: none;
+                border-color: var(--rp-foam);
+            }
         }
 
         #reset {
