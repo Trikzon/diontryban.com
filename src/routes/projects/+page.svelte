@@ -1,29 +1,55 @@
 <script lang="ts">
     import { ProjectList } from "$lib/components";
-    import type { ProjectMetadata } from "$lib/types";
+    import { PROJECT_TAGS, type ProjectMetadata } from "$lib/types";
 
-    export let data: { projects: ProjectMetadata[], query: string };
+    export let data: { projects: ProjectMetadata[], query: string, tags: string[] };
 
-    let filteredProjects = data.projects;
+    let filteredProjects: ProjectMetadata[] = [];
+    let selectedTags: string[] = data.tags;
     filterProjects();
-
+    
     function onSearchInput() {
-        updateSearchParams({ q: data.query });
+        updateSearchParam("q", data.query);
         filterProjects();
     }
 
     function onResetClick() {
-        updateSearchParams({ q: "" });
+        updateSearchParam("q", "");
         data.query = "";
+        updateMultiSearchParam("t", []);
+        for (const searchTag of document.getElementsByClassName("search-tag")) {
+            searchTag.classList.remove("selected");
+        }
+        selectedTags = [];
+        filterProjects();
+    }
+
+    function onTagClick(this: HTMLButtonElement) {
+        if (selectedTags.includes(this.name)) {
+            selectedTags = selectedTags.filter(tag => tag !== this.name);
+            this.classList.remove("selected");
+        } else {
+            selectedTags.push(this.name);
+            this.classList.add("selected");
+        }
+        updateMultiSearchParam("t", selectedTags);
         filterProjects();
     }
 
     function filterProjects() {
-        if (!!data.query) {
+        if (!!data.query || selectedTags.length > 0) {
             const lowerQuery = data.query.toLowerCase();
             filteredProjects = data.projects.filter(project => {
+                const tags = project.tags?.map(tag => tag.toLowerCase()) ?? [];
+                for (const selectedTag of selectedTags) {
+                    if (!tags.includes(selectedTag)) {
+                        return false;
+                    }
+                }
+
                 const title = project.title.toLowerCase();
                 const description = project.description.toLowerCase();
+
                 return title.includes(lowerQuery) || description.includes(lowerQuery);
             });
         } else {
@@ -31,16 +57,29 @@
         }
     }
 
-    function updateSearchParams(values: Record<string, string>) {
+    function updateSearchParam(key: string, value: string) {
         const url = new URL(location.href);
-        for (let [k, v] of Object.entries(values)) {
-            if (!!v) {
-                url.searchParams.set(encodeURIComponent(k), encodeURIComponent(v.trim()));
-            } else {
-                url.searchParams.delete(encodeURIComponent(k));
+        if (!!value) {
+            url.searchParams.set(encodeURIComponent(key), encodeURIComponent(value.trim()));
+        } else {
+            url.searchParams.delete(encodeURIComponent(key));
+        }
+        history.replaceState(null, "", url.toString());
+    }
+
+    function updateMultiSearchParam(key: string, value: string[]) {
+        const url = new URL(location.href);
+        url.searchParams.delete(encodeURIComponent(key));
+        if (value.length > 0) {
+            for (const val of value) {
+                url.searchParams.append(encodeURIComponent(key), encodeURIComponent(val.trim()));
             }
         }
         history.replaceState(null, "", url.toString());
+    }
+
+    function countProjectsByTag(tag: string) {
+        return data.projects.filter(project => project.tags?.includes(tag)).length;
     }
 </script>
 
@@ -53,6 +92,13 @@
     <div id="search-and-clear">
         <input type="text" id="search" placeholder="Search projects..." bind:value={data.query} on:input={onSearchInput}>
         <button id="reset" on:click={onResetClick}>Reset</button>
+    </div>
+    <div id="tags">
+        {#each Object.keys(PROJECT_TAGS) as tag}
+            <button name={tag} class="search-tag plain" class:selected={selectedTags.includes(tag)} on:click={onTagClick}>
+                #{PROJECT_TAGS[tag] ?? tag} ({countProjectsByTag(tag)})
+            </button>
+        {/each}
     </div>
     <section>
         <ProjectList projects={filteredProjects}/>
@@ -102,6 +148,32 @@
 
             &:hover {
                 color: var(--rp-foam);
+            }
+        }
+    }
+
+    #tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        .search-tag {
+            background-color: var(--rp-overlay);
+            border-radius: 12px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.8rem;
+            cursor: pointer;
+            border: none;
+            color: var(--rp-text);
+
+            transition:
+                background-color var(--trans-speed) linear,
+                color var(--trans-speed) linear;
+
+            &.selected {
+                background-color: var(--rp-foam);
+                color: var(--rp-highlight-low);
             }
         }
     }

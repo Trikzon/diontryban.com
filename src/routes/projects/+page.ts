@@ -6,6 +6,7 @@ export const load = (async ({ fetch, url }) => {
     let projects: ProjectMetadata[] = await response.json();
 
     const query = decodeURIComponent(url.searchParams.get("q") ?? "");
+    const tags = url.searchParams.getAll("t").map((t) => decodeURIComponent(t));
 
-    return { projects, query };
+    return { projects, query, tags };
 }) satisfies PageLoad;

@@ -1,8 +1,7 @@
 <script lang="ts">
-    import type { ProjectMetadata } from "$lib/types";
+    import { PROJECT_TAGS, type ProjectMetadata } from "$lib/types";
     import { formatDate } from "$lib/utils";
     import { InfoCard } from ".";
-    import ProjectTag from "./ProjectTag.svelte";
 
     export let projects: ProjectMetadata[];
 </script>
@@ -19,7 +18,9 @@
             {#if project.tags}
                 <div id="tags">
                     {#each project.tags as tag}
-                        <ProjectTag {tag}/>
+                        <a href="/projects?t={tag}" class="tag plain" target="_self">
+                            #{PROJECT_TAGS[tag] ?? tag}
+                        </a>
                     {/each}
                 </div>
             {/if}
@@ -33,5 +34,16 @@
         flex-wrap: wrap;
         gap: 0.5rem;
         margin-top: 0.5rem;
+
+        .tag {
+            background-color: var(--rp-base);
+            border-radius: 12px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.8rem;
+
+            transition:
+                background-color var(--trans-speed) linear,
+                color var(--trans-speed) linear;
+        }
     }
 </style>

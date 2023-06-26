@@ -15,6 +15,7 @@ export type ProjectMetadata = {
 
 export const PROJECT_TAGS: { [tag: string]: string } = {
     "java": "Java",
+    "mdsvex": "mdsvex",
     "minecraft-mod": "Minecraft Mod",
     "sveltekit": "SvelteKit",
     "typescript": "TypeScript",
