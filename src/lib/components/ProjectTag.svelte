@@ -5,7 +5,7 @@
 </script>
 
 <a id="tag" class="plain">
-    {PROJECT_TAGS[tag] ?? tag}
+    #{PROJECT_TAGS[tag] ?? tag}
 </a>
 
 <style lang="scss">
@@ -14,5 +14,9 @@
         border-radius: 12px;
         padding: 0.25rem 0.5rem;
         font-size: 0.8rem;
+
+        transition:
+            background-color var(--trans-speed) linear,
+            color var(--trans-speed) linear;
     }
 </style>
