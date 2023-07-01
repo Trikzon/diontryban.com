@@ -17,7 +17,7 @@
             </span>
             <span slot="right-info">
                 GPA: 4.00<br/>
-                Cumulative GPA: 3.56
+                Cumulative GPA: 3.58
             </span>
         </InfoCard>
         <InfoCard name="University of South Florida" logo="/resume/usf_seal.png" dateRange="August 2021 — December 2022" url="https://www.usf.edu" external>
