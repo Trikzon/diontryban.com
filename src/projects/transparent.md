@@ -1,7 +1,7 @@
 ---
 title: "Transparent"
 description: "Allows resource packs to make certain entities support transparency."
-logo: "https://github.com/Trikzon/transparent/blob/1.20/Common/src/main/resources/assets/transparent/icon.png?raw=true"
+logo: "projects/transparent.png"
 startDate: "2020-04-20"
 tags:
   - "minecraft-mod"

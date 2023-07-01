@@ -1,7 +1,7 @@
 ---
 title: Flourish
 description: "Lets you spread small flowers with bonemeal."
-logo: "https://github.com/Trikzon/flourish/blob/1.20/icon.gif?raw=true"
+logo: "projects/flourish.gif"
 startDate: "2019-12-30"
 tags:
   - "minecraft-mod"

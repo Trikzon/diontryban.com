@@ -1,7 +1,7 @@
 ---
 title: "Sneak Through Berries"
 description: "Lets you sneak through Sweet Berries without taking damage."
-logo: "https://github.com/Trikzon/sneak-through-berries/blob/1.20/Common/src/main/resources/assets/sneak_through_berries/icon.png?raw=true"
+logo: "projects/sneak-through-berries.png"
 startDate: "2019-07-21"
 tags:
   - "minecraft-mod"

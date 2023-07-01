@@ -1,7 +1,7 @@
 ---
 title: "Shuffle"
 description: "Lets you place random blocks from your hotbar with ease."
-logo: "https://github.com/Trikzon/shuffle/blob/1.20/Common/src/main/resources/assets/shuffle/icon.png?raw=true"
+logo: "/projects/shuffle.png"
 startDate: "2020-11-28"
 tags:
   - "minecraft-mod"

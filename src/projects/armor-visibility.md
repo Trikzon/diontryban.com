@@ -1,7 +1,7 @@
 ---
 title: "Armor Visibility"
 description: "Lets you toggle the rendering of armor with a keyboard shortcut."
-logo: "https://github.com/Trikzon/armor-visibility/blob/1.20/Common/src/main/resources/assets/armor_visibility/icon.png?raw=true"
+logo: "/projects/armor-visibility.png"
 startDate: "2020-06-21"
 tags:
   - "minecraft-mod"

@@ -1,7 +1,7 @@
 ---
 title: "Ash API"
 description: "An abstraction layer between Fabric, Forge, and Quilt."
-logo: "https://github.com/Trikzon/ash-api/blob/1.20/common/src/main/resources/assets/ash_api/icon.png?raw=true"
+logo: "/projects/ash.png"
 startDate: "2023-02-14"
 tags:
   - "minecraft-mod"
