@@ -16,8 +16,17 @@
         background-color: orange;
         box-shadow: var(--shadow);
         color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         z-index: 1000;
         text-align: center;
+
+        background-image: repeating-linear-gradient(
+            -55deg,
+            #000,
+            #000 20px,
+            #ffb101 20px,
+            #ffb101 40px
+        );
     }
 
     :global(#banner + #wrapper > header) {
