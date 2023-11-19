@@ -13,22 +13,19 @@
     <img src="/profile.jpeg" alt="Me"/>
     <div class="text">
         <h1>Dion Tryban</h1>
-        <h2>Computer Science Student</h2>
-        <p>
-            Hello! I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a>.<br/>
-            I develop applications, video games, and Minecraft mods.<br/>
-            I am searching for a 2024 summer internship.
+        <p id="bio">
+            Hello, I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a> who is interested in video game development.
+            <br/><br/>
+            I am the Vice President of <a href="https://fsu.devlup.org">DevLUp FSU</a> where I help teach students game programming via workshops, lectures, and projects.
+            <br/><br/>
+            <a href="/about">Learn more...</a>
         </p>
     </div>
 </section>
 <section id="projects">
-    <h1>Latest Projects</h1>
+    <h2>My Projects</h2>
     <ProjectList projects={data.projects}/>
     <p><a href="/projects">View more</a></p>
-</section>
-<section id="blog">
-    <h1>Latest Blog Posts</h1>
-    <p><a href="/blog">Read more</a></p>
 </section>
 
 <style lang="scss">
@@ -42,8 +39,13 @@
             text-align: center;
         }
 
-        h1, h2 {
+        h1 {
             margin: 0;
+        }
+
+        #bio {
+            margin: 8px 0;
+            line-height: 1.5rem;
         }
 
         img {

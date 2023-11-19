@@ -8,9 +8,9 @@
     </div>
     <div class="right">
         <span class="links">
+            <a href="/about" class="muted plain">About</a>
             <a href="/blog" class="muted plain">Blog</a>
             <a href="/projects" class="muted plain">Projects</a>
-            <a href="/resume" class="muted plain">Résumé</a>
         </span>
         <ThemeToggle></ThemeToggle>
     </div>
