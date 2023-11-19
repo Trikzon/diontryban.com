@@ -9,7 +9,7 @@
 <section id="about">
     <img src="/profile.jpeg" alt="Me"/>
     <div class="text">
-        <h1>Dion Tryban</h1>
+        <h1>About Me</h1>
         <p id="bio">
             Hello, I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a> who is interested in video game development.
             <br/><br/>
@@ -90,6 +90,7 @@
             background-color: var(--rp-base);
             border-radius: 12px;
             padding: 0.25rem 0.5rem;
+            white-space: nowrap;
 
             transition:
                 background-color var(--trans-speed) linear,

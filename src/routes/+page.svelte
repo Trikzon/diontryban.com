@@ -18,7 +18,7 @@
             <br/><br/>
             I am the Vice President of <a href="https://fsu.devlup.org">DevLUp FSU</a> where I help teach students game programming via workshops, lectures, and projects.
             <br/><br/>
-            <a href="/about">Learn more...</a>
+            Thank you for visiting! Learn more <a href="/about">about me</a> or <a href="/projects">my projects</a>.
         </p>
     </div>
 </section>
