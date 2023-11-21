@@ -20,16 +20,21 @@ html, body {
 
 a {
     text-decoration: underline;
-    color: var(--rp-text);
+    color: var(--rp-foam);
     font-size: 1rem;
     cursor: pointer;
 
     &:not(:hover).plain {
         text-decoration: none;
     }
-
     &:hover {
-        color: var(--rp-foam);
+        color: var(--rp-iris);
+    }
+
+    > p, > h1, > h2, > h3, > h4, > h5, > h6, > li, > span {
+        &:hover {
+            color: var(--rp-iris)
+        }
     }
 }
 
@@ -63,8 +68,9 @@ h3 {
 }
 
 p, li {
+    margin: 8px 0;
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 
 ul {

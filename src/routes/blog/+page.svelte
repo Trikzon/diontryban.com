@@ -3,6 +3,6 @@
 </svelte:head>
 
 <section>
-    <h1>Blog</h1>
+    <h1>Writing</h1>
     Coming soon...
 </section>

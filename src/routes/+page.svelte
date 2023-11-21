@@ -1,6 +1,7 @@
 <script lang="ts">
-    import { ProjectList } from "$lib/components";
-    import type { ProjectMetadata } from "$lib/types";
+    import Card from "$lib/components/Card.svelte";
+import ProjectCard from "$lib/components/ProjectCard.svelte";
+import type { ProjectMetadata } from "$lib/types";
 
     export let data: { projects: ProjectMetadata[] };
 </script>
@@ -23,9 +24,17 @@
     </div>
 </section>
 <section id="projects">
-    <h2>My Projects</h2>
-    <ProjectList projects={data.projects}/>
-    <p><a href="/projects">View more</a></p>
+    <h2>Featured Projects</h2>
+    <div id="project-list">
+        {#if data.projects}
+            {#each data.projects as project}
+                <ProjectCard {project}></ProjectCard>
+            {/each}
+        {/if}
+        <Card title="Even More Projects" url="/projects">
+            <p>View more projects on the <a href="/projects" target="_self">Projects</a> page.</p>
+        </Card>
+    </div>
 </section>
 
 <style lang="scss">
@@ -57,6 +66,15 @@
             border-radius: 10%;
             box-shadow: var(--shadow);
             margin-right: 1rem;
+        }
+    }
+    #projects {
+        #project-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
         }
     }
 </style>

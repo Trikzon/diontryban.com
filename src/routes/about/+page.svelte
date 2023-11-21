@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { InfoCard } from "$lib/components"
+    import { InfoCard, LinkBubble } from "$lib/components"
 </script>
 
 <svelte:head>
@@ -15,10 +15,11 @@
             <br/><br/>
             I am the Vice President of <a href="fsu.devlup.org">DevLUp FSU</a> where I help teach students game programming via workshops, lectures, and projects.
             <br/><br/>
-            <a class="bubble" href=""><i class="fa-solid fa-file"></i>Resume</a>
-            <a class="bubble" href="https://www.linkedin.com/in/diontryban/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-            <a class="bubble" href="https://github.com/Trikzon"><i class="fa-brands fa-github"></i>GitHub</a>
-            <a class="bubble" href="https://mastodon.gamedev.place/@diontryban"><i class="fa-brands fa-mastodon"></i>Mastodon</a>
+            <LinkBubble href=""><i class="fa-solid fa-file"></i>Resume</LinkBubble>
+            <LinkBubble href="mailto:mail@diontryban.com"><i class="fa-solid fa-envelope"></i>Email</LinkBubble>
+            <LinkBubble href="https://www.linkedin.com/in/diontryban/"><i class="fa-brands fa-linkedin"></i>LinkedIn</LinkBubble>
+            <LinkBubble href="https://github.com/Trikzon"><i class="fa-brands fa-github"></i>GitHub</LinkBubble>
+            <LinkBubble href="https://mastodon.gamedev.place/@diontryban"><i class="fa-brands fa-mastodon"></i>Mastodon</LinkBubble>
         </p>
     </div>
 </section>
@@ -84,21 +85,6 @@
             border-radius: 10%;
             box-shadow: var(--shadow);
             margin-right: 1rem;
-        }
-
-        .bubble {
-            background-color: var(--rp-base);
-            border-radius: 12px;
-            padding: 0.25rem 0.5rem;
-            white-space: nowrap;
-
-            transition:
-                background-color var(--trans-speed) linear,
-                color var(--trans-speed) linear;
-
-            i {
-                padding-right: 0.25rem;
-            }
         }
     }
 </style>

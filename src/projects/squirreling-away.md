@@ -1,7 +1,9 @@
 ---
+featured: true
 title: "Squirreling Away"
 description: "Play as an escaped pet hamster saved by the squirrel resistance!"
-logo: "/projects/squirreling-away.png"
+logo: "/projects/squirreling-away/logo.png"
+promoImage: "/projects/squirreling-away/promo.png"
 startDate: "2023-03-25"
 endDate: "2023-03-26"
 tags:
@@ -9,6 +11,10 @@ tags:
   - "game-jam"
   - "godot"
   - "gdscript"
+type: "game-jam"
+article: "/blog/squirreling-away"
+demo: "https://alectrem.itch.io/squirreling-away"
+source: "https://github.com/Trikzon/squirreling-away"
 ---
 
 DevLUp FSU Spring 2023 Game Jame Entry made in 48 hours and available on [itch.io](https://alectrem.itch.io/squirreling-away).

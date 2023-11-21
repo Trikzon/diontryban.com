@@ -28,7 +28,7 @@
         float: right;
 
         &:hover #switch {
-            color: var(--rp-foam);
+            color: var(--rp-iris);
         }
 
         #slide {

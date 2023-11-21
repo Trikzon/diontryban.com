@@ -1,13 +1,18 @@
 export type ProjectMetadata = {
     slug: string;
-    hidden?: boolean;
+    hidden: boolean;
+    featured: boolean;
     title: string;
     description: string;
     logo?: string;
+    promoImage?: string;
     startDate: string;
     endDate?: string;
     tags?: string[];
-    github?: string;
+    type?: string;
+    article?: string;
+    demo?: string;
+    source?: string;
 };
 
 export const PROJECT_TAGS: { [tag: string]: string } = {
