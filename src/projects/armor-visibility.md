@@ -1,11 +1,14 @@
 ---
 title: "Armor Visibility"
 description: "Lets you toggle the rendering of armor with a keyboard shortcut."
-logo: "/projects/armor-visibility.png"
+logo: "/projects/armor-visibility/logo.png"
+promoImage: "/projects/armor-visibility/promo.png"
 startDate: "2020-06-21"
 tags:
-  - "minecraft-mod"
   - "java"
+type: "mc-mod"
+download: "https://modrinth.com/mod/armor-visibility"
+source: "https://github.com/Trikzon/armor-visibility/"
 ---
 
 View yours and others' skins through armor.

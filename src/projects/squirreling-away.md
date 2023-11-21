@@ -7,13 +7,10 @@ promoImage: "/projects/squirreling-away/promo.png"
 startDate: "2023-03-25"
 endDate: "2023-03-26"
 tags:
-  - "game"
-  - "game-jam"
   - "godot"
   - "gdscript"
 type: "game-jam"
-article: "/blog/squirreling-away"
-demo: "https://alectrem.itch.io/squirreling-away"
+download: "https://alectrem.itch.io/squirreling-away"
 source: "https://github.com/Trikzon/squirreling-away"
 ---
 

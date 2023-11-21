@@ -1,13 +1,14 @@
 ---
-featured: true
 title: "Shuffle"
 description: "Lets you place random blocks from your hotbar with ease."
-logo: "/projects/shuffle.png"
+logo: "/projects/shuffle/logo.png"
+promoImage: "/projects/shuffle/promo.png"
 startDate: "2020-11-28"
 tags:
-  - "minecraft-mod"
   - "java"
 type: "mc-mod"
+download: "https://modrinth.com/mod/shuffle"
+source: "https://github.com/trikzon/shuffle"
 ---
 
 Shuffle allows players to place blocks randomly from their hotbar. This can help speed up the building process and add variety to buildings.

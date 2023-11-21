@@ -73,8 +73,6 @@ import type { ProjectMetadata } from "$lib/types";
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-
-
         }
     }
 </style>

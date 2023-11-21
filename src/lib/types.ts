@@ -11,7 +11,7 @@ export type ProjectMetadata = {
     tags?: string[];
     type?: string;
     article?: string;
-    demo?: string;
+    download?: string;
     source?: string;
 };
 

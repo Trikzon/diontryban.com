@@ -3,7 +3,7 @@
     export let external: boolean = false;
 </script>
 
-<a {href} target={external ? "_blank" : "_self"}><slot/></a>
+<a class="plain" {href} target={external ? "_blank" : "_self"}><slot/></a>
 
 <style lang="scss">
     a {

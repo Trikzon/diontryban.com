@@ -12,13 +12,25 @@
                 <div id="badge">
                     <i class="fa-solid fa-jar"></i>Game Jam
                 </div>
+            {:else if project.type === "game"}
+                <div id="badge">
+                    <i class="fa-solid fa-gamepad"></i>Game
+                </div>
             {:else if project.type === "mc-mod"}
                 <div id="badge">
                     <i class="fa-solid fa-cube"></i>MC Mod
                 </div>
+            {:else if project.type === "obsidian-plugin"}
+                <div id="badge">
+                    <i class="fa-solid fa-seedling"></i>Obsidian Plugin
+                </div>
             {:else if project.type === "website"}
                 <div id="badge">
                     <i class="fa-solid fa-desktop"></i>Website
+                </div>
+            {:else if project.type === "application"}
+                <div id="badge">
+                    <i class="fa-brands fa-app-store-ios"></i>Application
                 </div>
             {/if}
         {/if}
@@ -27,13 +39,13 @@
         <p>{project.description}</p>
         <div id="project-links">
             {#if project.article}
-                <LinkBubble><i class="fa-solid fa-file"></i>Article</LinkBubble>
+                <LinkBubble href={project.article}><i class="fa-solid fa-file"></i>Article</LinkBubble>
             {/if}
-            {#if project.demo}
-                <LinkBubble><i class="fa-solid fa-gamepad"></i>Demo</LinkBubble>
+            {#if project.download}
+                <LinkBubble href={project.download} external><i class="fa-solid fa-download"></i>Download</LinkBubble>
             {/if}
             {#if project.source}
-                <LinkBubble><i class="fa-brands fa-github"></i>Source</LinkBubble>
+                <LinkBubble href={project.source} external><i class="fa-brands fa-github"></i>Source</LinkBubble>
             {/if}
         </div>
     </Card>
@@ -50,8 +62,10 @@
             margin-left: -10rem;
             display: flex;
             width: 10rem;
+            pointer-events: none;
 
             #badge {
+                pointer-events: all;
                 display: block;
                 background-color: var(--rp-overlay);
                 padding: 0.5rem;
@@ -67,6 +81,7 @@
         }
 
         #project-links {
+            margin-top: auto;
             display: flex;
         }
     }

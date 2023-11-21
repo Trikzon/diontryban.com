@@ -86,6 +86,8 @@
             }
         }
         #bottom {
+            display: flex;
+            flex-direction: column;
             background-color: var(--rp-overlay);
             border-bottom-left-radius: 12px;
             border-bottom-right-radius: 12px;

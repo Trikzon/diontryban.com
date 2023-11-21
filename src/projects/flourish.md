@@ -1,11 +1,14 @@
 ---
 title: Flourish
 description: "Lets you spread small flowers with bonemeal."
-logo: "projects/flourish.gif"
+logo: "projects/flourish/logo.gif"
+promoImage: "projects/flourish/promo.png"
 startDate: "2019-12-30"
 tags:
-  - "minecraft-mod"
   - "java"
+type: "mc-mod"
+download: "https://modrinth.com/mod/flourish"
+source: "https://github.com/Trikzon/flourish"
 ---
 
 Use bonemeal to spread small flowers. This is a port of the Bedrock Edition mechanic of [Flower Farming](https://minecraft.fandom.com/wiki/Tutorials/Flower_farming).

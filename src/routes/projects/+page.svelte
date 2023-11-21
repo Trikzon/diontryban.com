@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ProjectList } from "$lib/components";
+    import ProjectCard from "$lib/components/ProjectCard.svelte";
     import { PROJECT_TAGS, type ProjectMetadata } from "$lib/types";
 
     export let data: { projects: ProjectMetadata[], query: string, tags: string[] };
@@ -102,9 +102,12 @@
             {/if}
         {/each}
     </div>
-    <section>
-        <ProjectList projects={filteredProjects}/>
-    </section>
+    <div id="project-list">
+        <!-- <ProjectList projects={filteredProjects}/> -->
+        {#each filteredProjects as project}
+            <ProjectCard {project}></ProjectCard>
+        {/each}
+    </div>
 </section>
 
 <style lang="scss">
@@ -183,5 +186,11 @@
                 color: var(--rp-highlight-low);
             }
         }
+    }
+
+    #project-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 </style>

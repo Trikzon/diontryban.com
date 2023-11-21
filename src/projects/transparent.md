@@ -1,11 +1,14 @@
 ---
 title: "Transparent"
 description: "Allows resource packs to make certain entities support transparency."
-logo: "projects/transparent.png"
+logo: "projects/transparent/logo.png"
+promoImage: "projects/transparent/promo.png"
 startDate: "2020-04-20"
 tags:
-  - "minecraft-mod"
   - "java"
+type: "mc-mod"
+download: "https://modrinth.com/mod/transparent"
+source: "https://github.com/trikzon/transparent"
 ---
 
 Transparent allows resource packs to give certain entities textures with transparent (or translucent) pixels. To use, simply install the mod and use or create a resource pack that gives one of the supported entities a transparent texture.

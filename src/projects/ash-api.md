@@ -1,11 +1,14 @@
 ---
+featured: true
 title: "Ash API"
-description: "An abstraction layer between Fabric, Forge, and Quilt."
-logo: "/projects/ash.png"
+description: "An API that provides an abstraction layer between the APIs of the main Minecraft mod loaders: (Neo)Forge and Fabric."
+logo: "/projects/ash-api/logo.png"
 startDate: "2023-02-14"
 tags:
-  - "minecraft-mod"
   - "java"
+type: "mc-mod"
+download: "https://www.modrinth.com/mod/ash-api"
+source: "https://github.com/trikzon/ash-api"
 ---
 
 An API that provides an abstraction layer between the three main Minecraft mod loaders (Fabric, Forge, and Quilt). It is meant to be used with a multi-loader development environment such as Jared's [MultiLoader-Template](https://github.com/jaredlll08/MultiLoader-Template).
