@@ -15,7 +15,7 @@
             <br/><br/>
             I am the Vice President of <a href="fsu.devlup.org">DevLUp FSU</a> where I help teach students game programming via workshops, lectures, and projects.
             <br/><br/>
-            <LinkBubble href="/resume/Dion Tryban - 2023-12-01.pdf"><i class="fa-solid fa-file"></i>Resume</LinkBubble>
+            <LinkBubble href="/resume/Dion Tryban - 2024-01-23.pdf"><i class="fa-solid fa-file"></i>Resume</LinkBubble>
             <LinkBubble href="mailto:mail@diontryban.com"><i class="fa-solid fa-envelope"></i>Email</LinkBubble>
             <LinkBubble href="https://www.linkedin.com/in/diontryban/"><i class="fa-brands fa-linkedin"></i>LinkedIn</LinkBubble>
             <LinkBubble href="https://github.com/Trikzon"><i class="fa-brands fa-github"></i>GitHub</LinkBubble>
