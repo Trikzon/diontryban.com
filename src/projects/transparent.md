@@ -2,7 +2,8 @@
 title: "Transparent"
 description: "Allows resource packs to make certain entities support transparency."
 logo: "projects/transparent/logo.png"
-promoImage: "projects/transparent/promo.png"
+promoImages:
+  - "projects/transparent/promo.png"
 startDate: "2020-04-20"
 tags:
   - "java"

@@ -1,7 +1,8 @@
 ---
 title: "Obsidian Frontmatter Links"
 description: "Renders links in a note's frontmatter as links"
-promoImage: "/projects/obsidian-frontmatter-links/promo.png"
+promoImages:
+  - "/projects/obsidian-frontmatter-links/promo.png"
 startDate: "2022-10-26"
 tags:
   - "typescript"

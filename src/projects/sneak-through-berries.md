@@ -2,7 +2,8 @@
 title: "Sneak Through Berries"
 description: "Lets you sneak through Sweet Berries without taking damage."
 logo: "projects/sneak-through-berries/logo.png"
-promoImage: "projects/sneak-through-berries/promo.png"
+promoImages:
+  - "projects/sneak-through-berries/promo.png"
 startDate: "2019-07-21"
 tags:
   - "java"

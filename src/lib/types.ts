@@ -5,7 +5,7 @@ export type ProjectMetadata = {
     title: string;
     description: string;
     logo?: string;
-    promoImage?: string;
+    promoImages?: string[];
     startDate: string;
     endDate?: string;
     tags?: string[];

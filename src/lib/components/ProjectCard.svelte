@@ -35,7 +35,7 @@
             {/if}
         {/if}
     </div>
-    <Card title={project.title} url="/projects/{project.slug}" logo={project.logo} promoImage={project.promoImage}>
+    <Card title={project.title} url="/projects/{project.slug}" logo={project.logo} promoImage={project.promoImages && project.promoImages[0]}>
         <p>{project.description}</p>
         <div id="project-links">
             {#if project.article}

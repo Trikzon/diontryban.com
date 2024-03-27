@@ -2,7 +2,8 @@
 title: Flourish
 description: "Lets you spread small flowers with bonemeal."
 logo: "projects/flourish/logo.gif"
-promoImage: "projects/flourish/promo.png"
+promoImages:
+  - "projects/flourish/promo.png"
 startDate: "2019-12-30"
 tags:
   - "java"

@@ -2,7 +2,8 @@
 title: "Armor Visibility"
 description: "Lets you toggle the rendering of armor with a keyboard shortcut."
 logo: "/projects/armor-visibility/logo.png"
-promoImage: "/projects/armor-visibility/promo.png"
+promoImages:
+  - "/projects/armor-visibility/promo.png"
 startDate: "2020-06-21"
 tags:
   - "java"

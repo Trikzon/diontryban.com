@@ -3,7 +3,11 @@ featured: true
 title: "Squirreling Away"
 description: "Play as an escaped pet hamster saved by the squirrel resistance!"
 logo: "/projects/squirreling-away/logo.png"
-promoImage: "/projects/squirreling-away/promo.png"
+promoImages:
+  - "/projects/squirreling-away/promo.png"
+  - "https://user-images.githubusercontent.com/29845000/230514344-ce5ebe77-e875-43e6-8cd0-8eb22a4e68ac.png"
+  - "https://user-images.githubusercontent.com/29845000/230514586-6bbcfc34-cb6e-4518-8158-08b939189f44.png"
+  - "https://user-images.githubusercontent.com/29845000/230514801-3511b537-652c-44cc-8c0d-0c8751323929.png"
 startDate: "2023-03-25"
 endDate: "2023-03-26"
 tags:
@@ -30,17 +34,3 @@ Play as an escaped pet hamster saved by the squirrel resistance! You are instruc
 - WASD to move
 - Space to jump
 - E to push an item (let go of the item to finish the mission)
-
-## Promotional Images
-![image](https://user-images.githubusercontent.com/29845000/230514344-ce5ebe77-e875-43e6-8cd0-8eb22a4e68ac.png)
-
-![image](https://user-images.githubusercontent.com/29845000/230514586-6bbcfc34-cb6e-4518-8158-08b939189f44.png)
-
-![image](https://user-images.githubusercontent.com/29845000/230514801-3511b537-652c-44cc-8c0d-0c8751323929.png)
-
-<style lang="scss">
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-</style>

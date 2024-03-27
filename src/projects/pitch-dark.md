@@ -2,7 +2,8 @@
 title: "Pitch Dark"
 description: "Forces hostile mobs to only spawn in complete darkness"
 logo: "https://media.forgecdn.net/avatars/406/103/637618841912736264.png"
-promoImage: "/projects/pitch-dark/promo.png"
+promoImages:
+  - "/projects/pitch-dark/promo.png"
 startDate: "2021-07-14"
 endDate: "2021-07-14"
 tags:

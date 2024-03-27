@@ -2,7 +2,8 @@
 title: "Shuffle"
 description: "Lets you place random blocks from your hotbar with ease."
 logo: "/projects/shuffle/logo.png"
-promoImage: "/projects/shuffle/promo.png"
+promoImages:
+  - "/projects/shuffle/promo.png"
 startDate: "2020-11-28"
 tags:
   - "java"
