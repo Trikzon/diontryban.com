@@ -10,13 +10,13 @@
         <li><a class="muted plain" href="https://github.com/Trikzon/diontryban.com">Source Code</a></li>
     </ul>
     <p id="wide" class="muted">
-        Dion Tryban &copy 2023 — Powered by
+        &copy Dion Tryban 2023-2024 — Powered by
         <a class="muted" href="https://kit.svelte.dev">SvelteKit</a>, 
         <a class="muted" href="https://www.typescriptlang.org">TypeScript</a>, and 
         <a class="muted" href="https://mdsvex.com">mdsvex</a>
     </p>
     <div id="thin">
-        <p class="muted">Dion Tryban &copy 2023</p>
+        <p class="muted">&copy Dion Tryban 2023-2024</p>
         <p class="muted">
             Powered by
             <a class="muted" href="https://kit.svelte.dev">SvelteKit</a>, 
