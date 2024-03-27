@@ -1,8 +1,12 @@
+<script lang="ts">
+    import PageUrls from "$lib/data/PageUrls";
+</script>
+
 <footer>
     <ul>
-        <li><a class="muted plain" href="/contact">Contact</a></li>
-        <li><a class="muted plain" href="https://maven.diontryban.com/#">Maven</a></li>
-        <li><a class="muted plain" href="/privacy">Privacy</a></li>
+        <li><a class="muted plain" href={PageUrls.contact()}>Contact</a></li>
+        <li><a class="muted plain" href={PageUrls.external.maven()}>Maven</a></li>
+        <li><a class="muted plain" href={PageUrls.privacy()}>Privacy</a></li>
         <li><a class="muted plain" href="https://github.com/Trikzon/diontryban.com">Source Code</a></li>
     </ul>
     <p id="wide" class="muted">

@@ -1,15 +1,16 @@
 <script lang="ts">
+    import PageUrls from "$lib/data/PageUrls";
     import ThemeToggle from "./ThemeToggle.svelte";
 </script>
 
 <nav>
     <div class="left">
-        <a href="/" class="plain">Dion Tryban</a>
+        <a href={PageUrls.home()} class="plain">Dion Tryban</a>
     </div>
     <div class="right">
         <span class="links">
-            <a href="/about" class="muted plain">About</a>
-            <a href="/blog" class="muted plain">Blog</a>
+            <a href={PageUrls.about()} class="muted plain">About</a>
+            <!-- <a href={PageUrls.blog()} class="muted plain">Blog</a> -->
             <a href="/projects" class="muted plain">Projects</a>
         </span>
         <ThemeToggle></ThemeToggle>

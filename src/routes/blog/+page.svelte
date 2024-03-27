@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Blog — Dion Tryban</title>
+    <title>Blog • Dion Tryban</title>
 </svelte:head>
 
 <section>

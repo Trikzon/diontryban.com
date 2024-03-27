@@ -1,9 +1,10 @@
 <script lang="ts">
     import { InfoCard, LinkBubble } from "$lib/components"
+    import PageUrls from "$lib/data/PageUrls";
 </script>
 
 <svelte:head>
-    <title>About — Dion Tryban</title>
+    <title>About • Dion Tryban</title>
 </svelte:head>
 
 <section id="about">
@@ -11,21 +12,21 @@
     <div class="text">
         <h1>About Me</h1>
         <p id="bio">
-            Hello, I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a> who is interested in video game development.
+            Hello, I am a Computer Science major studying at <a href="https://www.cs.fsu.edu">Florida State University</a> and am interested in video game development.
             <br/><br/>
             I am the Vice President of <a href="fsu.devlup.org">DevLUp FSU</a> where I help teach students game programming via workshops, lectures, and projects.
             <br/><br/>
-            <LinkBubble href="/resume/Dion Tryban - 2023-02-26.pdf"><i class="fa-solid fa-file"></i>Resume</LinkBubble>
-            <LinkBubble href="mailto:mail@diontryban.com"><i class="fa-solid fa-envelope"></i>Email</LinkBubble>
-            <LinkBubble href="https://www.linkedin.com/in/diontryban/"><i class="fa-brands fa-linkedin"></i>LinkedIn</LinkBubble>
-            <LinkBubble href="https://github.com/Trikzon"><i class="fa-brands fa-github"></i>GitHub</LinkBubble>
-            <LinkBubble href="https://mastodon.gamedev.place/@diontryban"><i class="fa-brands fa-mastodon"></i>Mastodon</LinkBubble>
+            <LinkBubble href={PageUrls.resume()}><i class="fa-solid fa-file"></i>Resume</LinkBubble>
+            <LinkBubble href={PageUrls.external.mail()}><i class="fa-solid fa-envelope"></i>Email</LinkBubble>
+            <LinkBubble href={PageUrls.external.linkedin()}><i class="fa-brands fa-linkedin"></i>LinkedIn</LinkBubble>
+            <LinkBubble href={PageUrls.external.github()}><i class="fa-brands fa-github"></i>GitHub</LinkBubble>
+            <LinkBubble href={PageUrls.external.mastodon()}><i class="fa-brands fa-mastodon"></i>Mastodon</LinkBubble>
         </p>
     </div>
 </section>
 <section>
     <h2>Education</h2>
-    <InfoCard name="Florida State University" logo="/resume/fsu_seal.png" dateRange="January 2023 — May 2025" url="https://www.fsu.edu" external>
+    <InfoCard name="Florida State University" logo="/about/fsu_seal.png" dateRange="January 2023 — May 2025" url="https://www.fsu.edu" external>
         <span slot="left-info">
             <b>Bachelor of Science in Computer Science</b><br/>
             <em>Minor in Mathematics</em>
@@ -34,7 +35,7 @@
             GPA: 3.62
         </span>
     </InfoCard>
-    <InfoCard name="University of South Florida" logo="/resume/usf_seal.png" dateRange="August 2021 — December 2022" url="https://www.usf.edu" external>
+    <InfoCard name="University of South Florida" logo="/about/usf_seal.png" dateRange="August 2021 — December 2022" url="https://www.usf.edu" external>
         <span slot="left-info">
             <b>Associate of Arts</b><br/>
             <em>Concentration in Computer Science</em>
@@ -43,7 +44,7 @@
 </section>
 <section>
     <h2>Leadership Experience</h2>
-    <InfoCard name="DevLUp FSU" logo="/resume/devlup_fsu_logo.png" dateRange="April 2023 — May 2024" url="https://fsu.devlup.org" external>
+    <InfoCard name="DevLUp FSU" logo="/about/devlup_fsu_logo.png" dateRange="April 2023 — May 2024" url="https://fsu.devlup.org" external>
         <span slot="left-info">
             <b>Vice President</b>
             <ul>

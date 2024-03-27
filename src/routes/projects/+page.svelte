@@ -84,7 +84,7 @@
 </script>
 
 <svelte:head>
-    <title>Projects — Dion Tryban</title>
+    <title>Projects • Dion Tryban</title>
 </svelte:head>
 
 <section>
@@ -103,7 +103,6 @@
         {/each}
     </div>
     <div id="project-list">
-        <!-- <ProjectList projects={filteredProjects}/> -->
         {#each filteredProjects as project}
             <ProjectCard {project}></ProjectCard>
         {/each}

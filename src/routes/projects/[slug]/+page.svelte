@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>{data.meta.title} — Dion Tryban</title>
+    <title>{data.meta.title} • Dion Tryban</title>
     <!-- TODO: Put more Open Graph properties. -->
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{data.meta.title}"/>

@@ -1,7 +1,8 @@
 <script lang="ts">
     import Card from "$lib/components/Card.svelte";
-import ProjectCard from "$lib/components/ProjectCard.svelte";
-import type { ProjectMetadata } from "$lib/types";
+    import ProjectCard from "$lib/components/ProjectCard.svelte";
+    import PageUrls from "$lib/data/PageUrls";
+    import type { ProjectMetadata } from "$lib/types";
 
     export let data: { projects: ProjectMetadata[] };
 </script>
@@ -19,7 +20,7 @@ import type { ProjectMetadata } from "$lib/types";
             <br/><br/>
             I am the Vice President of <a href="https://fsu.devlup.org">DevLUp FSU</a> where I help teach students game programming via workshops, lectures, and projects.
             <br/><br/>
-            Thank you for visiting! Learn more <a href="/about">about me</a> or <a href="/projects">my projects</a>.
+            Thank you for visiting! Learn more <a href={PageUrls.about()}>about me</a> or <a href={PageUrls.projects()}>my projects</a>.
         </p>
     </div>
 </section>
@@ -31,8 +32,8 @@ import type { ProjectMetadata } from "$lib/types";
                 <ProjectCard {project}></ProjectCard>
             {/each}
         {/if}
-        <Card title="Even More Projects" url="/projects">
-            <p>View more projects on the <a href="/projects" target="_self">Projects</a> page.</p>
+        <Card title="Even More Projects" url={PageUrls.projects()}>
+            <p>View more projects on the <a href={PageUrls.projects()} target="_self">Projects</a> page.</p>
         </Card>
     </div>
 </section>
