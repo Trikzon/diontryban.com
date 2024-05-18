@@ -10,9 +10,9 @@ import rehypeCodeHeader from "./rehype_code_header";
 import rehypeShiki from "@shikijs/rehype";
 import rehypeReact from "rehype-react";
 import * as jsxRuntime from "react/jsx-runtime";
-import "./markdown_processor.module.scss";
+import "./remark_processor.module.scss";
 
-const markdownProcessor = unified()
+const remarkProcessor = unified()
     .use(remarkParse)
     .use(remarkBreaks)
     .use(remarkGfm)
@@ -29,4 +29,4 @@ const markdownProcessor = unified()
         jsxs: jsxRuntime.jsxs
     } as any);
 
-export default markdownProcessor;
+export default remarkProcessor;

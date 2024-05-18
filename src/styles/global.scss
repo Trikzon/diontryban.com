@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
 @import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
 @import url("https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css");
@@ -22,9 +22,10 @@
     
     color-scheme: light dark;
     color: var(--color-text);
-    background-color: var(--color-background);
+    background-color: var(--color-base);
 
     --border-radius: 4px;
+    --header-font-family: "Schibsted Grotesk", "Merriweather Sans", Arial, Helvetica, sans-serif;
     
     @media (prefers-color-scheme: light) {
         --color-text: var(--ctp-latte-text);
@@ -60,6 +61,7 @@
 a {
     color: var(--color-link);
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;
@@ -127,7 +129,7 @@ em {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Poetsen One", "Merriweather Sans", Arial, Helvetica, sans-serif;
+    font-family: var(--header-font-family);
 }
 
 p {

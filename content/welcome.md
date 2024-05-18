@@ -1,5 +1,7 @@
-# Welcome
-
+---
+title: "Welcome"
+date: "2024-05-18"
+---
 This is *some* test **markdown**!
 This should be on a newline.
 
