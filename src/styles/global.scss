@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+@import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
+@import url("https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
+    line-height: 1.5;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    color-scheme: light dark;
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    --border-radius: 4px;
+    
+    @media (prefers-color-scheme: light) {
+        --color-text: var(--ctp-latte-text);
+        --color-background: var(--ctp-latte-crust);
+        --color-base: var(--ctp-latte-base);
+        --color-border: var(--ctp-latte-surface0);
+        --color-accent: var(--ctp-latte-teal);
+        --color-bold: var(--ctp-latte-sapphire);
+        --color-italic: var(--ctp-latte-green);
+        --color-bold-italic: var(--ctp-latte-teal);
+        --color-link: var(--ctp-latte-blue);
+        --color-strikethrough: var(--ctp-latte-maroon);
+        --color-quote: var(--ctp-latte-rosewater);
+        --color-code-text: var(--ctp-latte-subtext0);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        --color-text: var(--ctp-mocha-text);
+        --color-background: var(--ctp-mocha-crust);
+        --color-base: var(--ctp-mocha-base);
+        --color-border: var(--ctp-mocha-surface0);
+        --color-accent: var(--ctp-mocha-teal);
+        --color-bold: var(--ctp-mocha-sapphire);
+        --color-italic: var(--ctp-mocha-green);
+        --color-bold-italic: var(--ctp-mocha-teal);
+        --color-link: var(--ctp-mocha-blue);
+        --color-strikethrough: var(--ctp-mocha-maroon);
+        --color-quote: var(--ctp-mocha-rosewater);
+        --color-code-text: var(--ctp-mocha-subtext0);
+    }
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 0.125em;
+    }
+}
+
+blockquote {
+    color: var(--color-quote);
+    background-color: var(--color-background);
+    
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    border-inline-start: 2px solid var(--color-accent);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    
+    :first-child {
+        margin-top: 0;
+    }
+    
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+code {
+    font-family: "Fira Mono", monospace;
+
+    background-color: var(--color-background) !important;
+    color: var(--color-code-text);
+    font-size: 0.875rem;
+    
+    padding: 0.1rem 0.25rem;
+
+    border-radius: var(--border-radius);
+}
+
+pre:has(> code) {
+    background-color: var(--color-background) !important;
+
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    border-radius: var(--border-radius);
+
+    code {
+        padding: 0;
+    }
+}
+
+del {
+    color: var(--color-strikethrough);
+}
+
+em {
+    color: var(--color-italic);
+
+    strong {
+        color: var(--color-bold-italic);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poetsen One", "Merriweather Sans", Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+strong {
+    color: var(--color-bold);
+}
+
+table {
+    margin: 1rem auto;
+    border-collapse: collapse;
+    background-color: var(--color-background);
+
+    th {
+        font-weight: bold;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid var(--color-border);
+    }
+}
+
+textarea, input {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+}
+
+ul, ol {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    list-style-position: inside;
+
+    li::marker {
+        color: var(--color-accent);
+    }
+
+    li:has(input[type="checkbox"]) {
+        list-style-type: none;
+
+        input[type="checkbox"] {
+            width: 0.9rem;
+            height: 0.9rem;
+
+            vertical-align: middle;
+
+            margin: 0 0.5rem 0.25rem -0.25rem;
+        }
+    }
+}
