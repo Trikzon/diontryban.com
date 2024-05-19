@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "./MarkdownPage.module.scss";
 import { useLocation } from "react-router-dom";
 import { MarkdownFile, markdownFiles } from "@/markdown/markdown_files";
+import MarkdownNav from "@/components/MarkdownNav";
 
 const MarkdownPage = () => {
     const { pathname } = useLocation();
@@ -24,12 +25,8 @@ const MarkdownPage = () => {
         <div className={styles.frame}>
             <div className={`${styles.sidebar} ${styles.left}`}>
                 <div className={styles.title}>Dion Tryban</div>
-                <input placeholder="Search"/>
-                <nav>
-                    <div>Welcome</div>
-                    <div>Projects</div>
-                    <div>About</div>
-                </nav>
+                {/* <input placeholder="Search" /> */}
+                <MarkdownNav />
             </div>
             <div className={styles.center}>
                 <div className={styles.pageTitle}>

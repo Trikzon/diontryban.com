@@ -4,9 +4,10 @@
     .sidebar {
         background-color: var(--color-base);
 
-        min-height: 100%;
-        min-height: 100dvh;
-        min-height: 100svh;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 16rem;
 
         margin-top: 4rem;
 
@@ -16,13 +17,15 @@
 
             gap: 1rem;
 
-            position: fixed;
             left: calc(50vw - 700px);
 
             .title {
                 font-family: var(--header-font-family);
                 font-size: 2rem;
                 font-weight: bold;
+                text-align: center;
+
+                border-bottom: 2px solid var(--color-accent);
             }
         }
     }

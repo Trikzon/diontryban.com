@@ -1,0 +1,31 @@
+.markdown-nav {
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    .nav-folder {
+        .nav-link {
+            display: flex;
+
+            &.active a {
+                color: var(--color-accent);
+            }
+
+            .marker {
+                width: 0.5em;
+                margin-right: 0.5em;
+                text-align: center;
+            }
+
+            a {
+                display: block;
+                overflow-x: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .nav-folder {
+            padding-left: 1rem;
+        }
+    }
+}

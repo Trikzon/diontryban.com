@@ -8,9 +8,7 @@ function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<Navigate to="/welcome" />} />
-                    <Route path="/:slug" element={<MarkdownPage />} />
-                    <Route path="/:folder/:slug" element={<MarkdownPage />} />
-                    <Route path="/:folder/:subfolder/:slug" element={<MarkdownPage />} />
+                    <Route path="*" element={<MarkdownPage />} />
                 </Routes>
             </Router>
         </StrictMode>

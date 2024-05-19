@@ -11,5 +11,10 @@ export default defineConfig({
     nodePolyfills(),
     tsconfigPaths(),
   ],
-  assetsInclude: ["content/**/*.md"]
+  assetsInclude: ["content/**/*.md"],
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+    },
+  },
 });
