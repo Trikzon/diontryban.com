@@ -1,0 +1,145 @@
+@import url(https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css);
+
+.markdown {
+    a {
+        color: var(--color-accent);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    blockquote {
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        border-inline-start: 4px solid var(--color-accent);
+        border-top-right-radius: var(--border-radius);
+        border-bottom-right-radius: var(--border-radius);
+
+        :first-child {
+            margin-top: 0;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    code {
+        padding: 0.1rem 0.25rem;
+
+        font-size: 0.875rem;
+
+        color: var(--color-code-text);
+        background-color: var(--color-code-background) !important;
+
+        border-radius: 4px;
+    }
+
+    del {
+        color: var(--color-strikethrough);
+    }
+
+    em {
+        color: var(--color-italic);
+
+        strong {
+            color: var(--color-bold-italic);
+        }
+    }
+
+    img {
+        display: block;
+
+        max-width: 80%;
+        height: auto;
+
+        margin: 1rem auto;
+    }
+
+    strong {
+        color: var(--color-bold);
+    }
+
+    p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    pre:has(> code) {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        overflow-x: auto;
+
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-radius: var(--border-radius);
+
+        background-color: var(--color-code-background) !important;
+
+        code {
+            padding: 0;
+        }
+
+        // Taken from https://shiki.matsu.io/guide/dual-themes and modified to
+        // fit scss syntax.
+        &:global(.shiki), &:global(.shiki span) {
+            @media (prefers-color-scheme: dark) {
+                color: var(--shiki-dark) !important;
+                /* Optional, if you also want font styles */
+                font-style: var(--shiki-dark-font-style) !important;
+                font-weight: var(--shiki-dark-font-weight) !important;
+                text-decoration: var(--shiki-dark-text-decoration) !important;
+            }
+        }
+    }
+
+    table {
+        margin: 1rem auto;
+        border-collapse: collapse;
+        background-color: var(--color-code-background);
+
+        th {
+            font-weight: bold;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            border: 1px solid var(--color-border);
+        }
+    }
+
+    textarea, input {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    ul, ol {
+        list-style-position: inside;
+
+        li::marker {
+            color: var(--color-accent);
+        }
+
+        li:has(input[type="checkbox"]) {
+            list-style-type: none;
+
+            input[type="checkbox"] {
+                margin-right: 0.5rem;
+            }
+        }
+
+        li > ul, li > ol {
+            margin-left: 1rem;
+        }
+    }
+
+    :global(.katex-display) {
+        overflow-x: auto;
+    }
+}

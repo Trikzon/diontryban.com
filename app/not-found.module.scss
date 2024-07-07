@@ -1,0 +1,15 @@
+.notFound {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+:global(:root):has(.notFound) {
+    background-size: cover, auto;
+    background-image: url("/not-found-forest.png");
+    background-blend-mode: overlay;
+}

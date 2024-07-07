@@ -1,0 +1,60 @@
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--color-border), transparent);
+
+    a {
+        text-decoration: none;
+        color: var(--color-text);
+
+        &:hover {
+            color: var(--color-accent);
+        }
+    }
+
+    .title {
+        font-weight: bold;
+    }
+
+    .navLinks {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            padding: 0 0.5rem;
+
+            border-bottom: 2px solid transparent;
+
+            &.active {
+                border-bottom-color: var(--color-accent);
+            }
+        }
+    }
+
+    .socialLinks {
+        display: flex;
+        gap: 1rem;
+
+        svg {
+            height: 1.25rem;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+
+        .navLinks {
+            a {
+                padding: 0.5rem 0;
+            }
+        }
+
+        .socialLinks {
+            display: none;
+        }
+    }
+}

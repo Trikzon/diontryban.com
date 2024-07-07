@@ -1,0 +1,60 @@
+@import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    
+    color-scheme: light dark;
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    scrollbar-color: hsl(0%, 0%, 66%) transparent;
+
+    --border-radius: 8px;
+    
+    @media (prefers-color-scheme: light) {
+        --color-text: var(--ctp-latte-text);
+        --color-code-text: var(--ctp-latte-subtext0);
+        --color-background: var(--ctp-latte-base);
+        --color-code-background: var(--ctp-latte-mantle);
+        --color-border: var(--ctp-latte-surface0);
+        --color-accent: var(--ctp-latte-mauve);
+        --color-bold: var(--ctp-latte-sapphire);
+        --color-italic: var(--ctp-latte-green);
+        --color-bold-italic: var(--ctp-latte-teal);
+        --color-strikethrough: var(--ctp-latte-maroon);
+
+        // Custom colors for remark-alerts.
+        --color-note: var(--ctp-latte-sapphire);
+        --color-tip: var(--ctp-latte-green);
+        --color-important: var(--ctp-latte-pink);
+        --color-warning: var(--ctp-latte-peach);
+        --color-caution: var(--ctp-latte-red);
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        --color-text: var(--ctp-mocha-text);
+        --color-code-text: var(--ctp-mocha-subtext0);
+        --color-background: var(--ctp-mocha-base);
+        --color-code-background: var(--ctp-mocha-mantle);
+        --color-border: var(--ctp-mocha-surface0);
+        --color-accent: var(--ctp-mocha-mauve);
+        --color-bold: var(--ctp-mocha-sapphire);
+        --color-italic: var(--ctp-mocha-green);
+        --color-bold-italic: var(--ctp-mocha-teal);
+        --color-strikethrough: var(--ctp-mocha-maroon);
+
+        // Custom colors for remark-alerts.
+        --color-note: var(--ctp-mocha-sapphire);
+        --color-tip: var(--ctp-mocha-green);
+        --color-important: var(--ctp-mocha-pink);
+        --color-warning: var(--ctp-mocha-peach);
+        --color-caution: var(--ctp-mocha-red);
+    }
+}

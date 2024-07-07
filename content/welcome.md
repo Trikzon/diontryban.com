@@ -1,68 +1,17 @@
 ---
-title: "Welcome"
-date: "2024-05-18"
-favorite: true
+title: "Welcome "
 ---
 
-This is *some* test **markdown**!
-This should be on a newline.
+My name is **Dion Tryban**. I am primarily a *game developer*, but I also create apps and websites. I am currently studying at [Florida State University](https://cs.fsu.edu). While you're here, check out my [projects](/projects) and read my [blog](/blog).
 
-Normal, *italic*, **bold**, ***both***, ~~strikethrough~~, `code`, [link](), https://google.com.
+I am the *President* of [DevLUp at FSU](https://fsu.devlup.org/), the video game development club at Florida State. As a club we host game jams, develop a club project, and do weekly workshops.
 
-> This is a quote block
-> that crosses *multiple **lines***!
-> 
-> —Benjamin Franklin, 1760
+<!-- TODO: Have a link and image to my latest workshop at DevLUp. -->
 
-This is how you say hello in Python: `print("Hello!")`
+My main project right now is [Mellohi](https://github.com/trikzon/mellohi), a *C++ WebGPU voxel game engine*. My goal is to use this project to learn how the many technologies behind modern games works. These underlying algorithms and systems are what interest me the most. I will be posting here about this frequently, so check back soon.
 
-```cpp
-#include <iostream>
+<!-- TODO: Have a link and image from Mellohi.  -->
 
-int main()
-{
-    std::cout << "Hello, World!" << std::endl;
-
-    return 0;
-}
-```
-
-```java
-class Main {
-    public static void main() {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-> [!NOTE]
-> Hello
-
-| Table | Example |
-| - | - |
-| Hello | World |
-
-| Alpha | Bravo |
-| - | - |
-| 中文 | Charlie |
-| 👩‍❤️‍👩 | Delta |
-
-- Hello
-- [ ] Task
-- [x] Completed Task
-1. Test
-2. Test
-
-Let $x=5$ and $y=2$.
-
-$$
-\begin{align*}
-\dpsaldl\\
-\boldsymbol{\text{bold: } B}\\
-f(x) &= x\pi\\
-g(x) &= \sum_{k=0}^{10}{\frac{1}{k}}\\
-\end{align*}
-$$
-
-
-Hello, *italics*, **bold**
+<!-- TODO: Link to the minecraft mods page. -->
+<!-- TODO: Write a blog post about making minecraft mods and learning how to code. -->
+In my free time, I maintain a few [Minecraft mods]() that have gotten more than *65-million downloads*. They are how I was first introduced to game development and Computer Science as a whole.
