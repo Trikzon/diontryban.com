@@ -1,0 +1,20 @@
+.blog {
+    margin-bottom: 1rem;
+
+    a:has(h2) {
+        text-decoration: none;
+        color: var(--color-accent);
+
+        h2 {
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .date {
+        font-size: 0.875rem;
+    }
+}

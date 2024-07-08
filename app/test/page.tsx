@@ -2,7 +2,7 @@ import { allContents } from "content-collections";
 import { notFound } from "next/navigation";
 import Markdown from "@/app/ui/Markdown"
 
-export default function App() {
+export default function Test() {
     const page = allContents.find((c) => c._meta.path === "test");
 
     if (!page) {

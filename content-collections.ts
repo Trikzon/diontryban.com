@@ -43,6 +43,8 @@ const blogs = defineCollection({
     include: "*.md",
     schema: (z) => ({
         title: z.string(),
+        slug: z.string(),
+        publishDate: z.string().date().optional(),
     }),
     transform: async (document, context) => {
         const html = await compileCustomMarkdown(context, document);

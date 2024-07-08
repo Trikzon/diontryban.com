@@ -2,7 +2,7 @@ import { allContents } from "content-collections";
 import Markdown from "@/app/ui/Markdown"
 import styles from "@/app/not-found.module.scss";
 
-export default function App() {
+export default function NotFound() {
     const page = allContents.find((c) => c._meta.path === "not-found");
 
     if (!page) {

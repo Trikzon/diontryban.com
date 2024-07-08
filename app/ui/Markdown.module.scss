@@ -51,6 +51,14 @@
         }
     }
 
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        border: none;
+        border-top: 2px solid var(--color-text);
+    }
+
     img {
         display: block;
 
