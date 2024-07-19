@@ -11,12 +11,12 @@ export interface BlogProps {
 
 export async function generateStaticParams() {
     return allBlogs.map((blog) => ({
-        params: { slug: blog.slug },
+        slug: blog._meta.path
     }));
 }
 
 export default async function Blog({ params }: BlogProps) {
-    const blog = allBlogs.find((b) => b.slug === params.slug);
+    const blog = allBlogs.find((b) => b._meta.path === params.slug);
 
     if (!blog) {
         notFound();

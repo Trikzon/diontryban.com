@@ -8,8 +8,8 @@ import styles from "@/app/ui/NavBar.module.scss";
 
 const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/blog", label: "Blog" },
-    { href: "/projects", label: "Projects" },
+    // { href: "/blog", label: "Blog" },
+    // { href: "/projects", label: "Projects" },
     { href: "/resume", label: "Resume" },
 ];
 

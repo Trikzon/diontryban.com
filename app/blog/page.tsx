@@ -1,4 +1,5 @@
 import { allBlogs } from "content-collections";
+import Link from "next/link";
 import styles from "@/app/blog/page.module.scss";
 
 function formatDate(dateString: string): string {
@@ -14,7 +15,7 @@ export default function Blogs() {
             <h1>Blog</h1>
             {blogs.map((blog) => (
                 <div className={styles.blog}>
-                    <a href={`/blog/${blog.slug}`}><h2>{blog.title}</h2></a>
+                    <Link href={`/blog/${blog._meta.path}`}><h2>{blog.title}</h2></Link>
                     <p className={styles.date}>Published on {formatDate(blog.publishDate!)}</p>
                 </div>
             ))}

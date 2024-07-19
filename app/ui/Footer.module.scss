@@ -17,6 +17,11 @@
             &:hover {
                 text-decoration: underline;
             }
+
+            .externalLinkIcon {
+                margin-left: 0.25rem;
+                width: 0.75rem;
+            }
         }
 
         @media screen and (max-width: 800px) {

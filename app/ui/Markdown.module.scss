@@ -147,6 +147,11 @@
         }
     }
 
+    :global(.external-link-icon) {
+        margin-left: 0.25rem;
+        width: 0.75rem;
+    }
+
     :global(.katex-display) {
         overflow-x: auto;
     }
