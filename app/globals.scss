@@ -1,4 +1,4 @@
-@import url("https://unpkg.com/@catppuccin/palette/css/catppuccin.css");
+@import "catppuccin.css";
 
 * {
     margin: 0;
@@ -57,4 +57,9 @@
         --color-warning: var(--ctp-mocha-peach);
         --color-caution: var(--ctp-mocha-red);
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
 }

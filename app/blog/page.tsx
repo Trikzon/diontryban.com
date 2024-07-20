@@ -8,13 +8,14 @@ function formatDate(dateString: string): string {
 };
 
 export default function Blogs() {
-    const blogs = allBlogs.filter((b) => b.publishDate).toSorted((a, b) => b.publishDate!.localeCompare(a.publishDate!));
+    let blogs = [...allBlogs].filter((b) => b.publishDate);
+    blogs.sort((a, b) => b.publishDate!.localeCompare(a.publishDate!));
 
     return (
         <div>
             <h1>Blog</h1>
             {blogs.map((blog) => (
-                <div className={styles.blog}>
+                <div className={styles.blog} key={blog._meta.path}>
                     <Link href={`/blog/${blog._meta.path}`}><h2>{blog.title}</h2></Link>
                     <p className={styles.date}>Published on {formatDate(blog.publishDate!)}</p>
                 </div>

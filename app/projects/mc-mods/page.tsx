@@ -1,4 +1,4 @@
-export const mcMods = [
+const mcMods = [
     {
         name: "Ash API",
         slug: "ash-api",
