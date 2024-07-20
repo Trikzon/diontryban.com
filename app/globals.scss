@@ -14,7 +14,7 @@
     color: var(--color-text);
     background-color: var(--color-background);
 
-    scrollbar-color: hsl(0%, 0%, 66%) transparent;
+    scrollbar-color: hsl(0, 0%, 66%) transparent;
 
     --border-radius: 8px;
     
@@ -57,6 +57,10 @@
         --color-warning: var(--ctp-mocha-peach);
         --color-caution: var(--ctp-mocha-red);
     }
+}
+
+html {
+    scrollbar-gutter: stable;
 }
 
 h1, h2, h3, h4, h5, h6 {
