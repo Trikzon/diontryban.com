@@ -1,0 +1,13 @@
+export declare const blue: string;
+export declare const green: string;
+export declare const lavender: string;
+export declare const maroon: string;
+export declare const muave: string;
+export declare const peach: string;
+export declare const pink: string;
+export declare const red: string;
+export declare const rosewater: string;
+export declare const sapphire: string;
+export declare const sky: string;
+export declare const teal: string;
+export declare const yellow: string;

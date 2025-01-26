@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    
+    color-scheme: light dark;
+    
+    --color-background: #eff1f5;
+    --color-text: #4c4f69;
+    --color-accent: #8839ef;
+    
+    --color-blue: #1e66f5;
+    --color-green: #40a02b;
+    --color-lavender: #7287fd;
+    --color-maroon: #e64553;
+    --color-muave: #8839ef;
+    --color-peach: #fe640b;
+    --color-pink: #ea76cb;
+    --color-red: #d20f39;
+    --color-rosewater: #dc8a78;
+    --color-sapphire: #209fb5;
+    --color-sky: #04a5e5;
+    --color-teal: #179299;
+    --color-yellow: #df8e1d;
+    
+    background-color: var(--color-background);
+    color: var(--color-text);
+    
+    @media (prefers-color-scheme: dark) {
+        --color-background: #303446;
+        --color-text: #c6d0f5;
+        --color-accent: #ca9ee6;
+        
+        --color-blue: #8caaee;
+        --color-green: #a6d189;
+        --color-lavender: #babbf1;
+        --color-maroon: #ea999c;
+        --color-muave: #ca9ee6;
+        --color-peach: #ef9f76;
+        --color-pink: #f4b8e4;
+        --color-red: #e78284;
+        --color-rosewater: #f2d5cf;
+        --color-sapphire: #85c1dc;
+        --color-sky: #99d1db;
+        --color-teal: #81c8be;
+        --color-yellow: #e5c890;
+    }
+}
+
+a {
+    --color-a: var(--color-accent);
+    
+    color: var(--color-text);
+    text-decoration-color: var(--color-a);
+    text-decoration-thickness: 2px;
+    
+    transition: color .25s;
+    
+    &:hover {
+        color: var(--color-a);
+    }
+    
+    &:has(strong) {
+        text-decoration: inherit;
+        
+        & > strong {
+            color: var(--color-a);
+        }
+    }
+    
+    &.blue { --color-a: var(--color-blue); }
+    &.green { --color-a: var(--color-green); }
+    &.lavender { --color-a: var(--color-lavender); }
+    &.maroon { --color-a: var(--color-maroon); }
+    &.muave { --color-a: var(--color-muave); }
+    &.peach { --color-a: var(--color-peach); }
+    &.pink { --color-a: var(--color-pink); }
+    &.red { --color-a: var(--color-red); }
+    &.rosewater { --color-a: var(--color-rosewater); }
+    &.sapphire { --color-a: var(--color-sapphire); }
+    &.sky { --color-a: var(--color-sky); }
+    &.teal { --color-a: var(--color-teal); }
+    &.yellow { --color-a: var(--color-yellow); }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    list-style-position: inside;
+    
+    li::marker {
+        color: var(--color-accent);
+    }
+    
+    li > ul, li > ol {
+        margin-left: 1rem;
+    }
+}
