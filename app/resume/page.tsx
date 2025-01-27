@@ -10,7 +10,7 @@ export default function Resume() {
         <li>Expected May 2025</li>
         <li>Bachelor of Science in Computer Science</li>
         <li>GPA: 3.764</li>
-        <li><em>President's List: Spring 2023, Fall 2023, Spring 2024, Fall 2024</em></li>
+        <li><em>President&apos;s List: Spring 2023, Fall 2023, Spring 2024, Fall 2024</em></li>
       </ul>
       <ul className={styles["column-list"]}>
         <li><strong>University of South Florida</strong></li>
@@ -65,7 +65,7 @@ export default function Resume() {
           <ul>
             <li>Design a modular minigame system for teams to easily integrate their work.</li>
             <li>Write core controller input, scene management, and results screen systems.</li>
-            <li>Create the game board that ties the team's minigames together.</li>
+            <li>Create the game board that ties the team&apos;s minigames together.</li>
           </ul>
         </li>
       </ul>
