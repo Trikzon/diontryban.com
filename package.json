@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev --turbopack\" \"typed-scss-modules -w app\"",
+    "dev": "concurrently \"next dev --turbopack\" \"typed-scss-modules -w app -n kebab -e default\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

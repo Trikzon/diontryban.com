@@ -1,5 +1,5 @@
 export type Styles = {
-  'body': string;
+  'column-list': string;
 };
 
 export type ClassNames = keyof Styles;

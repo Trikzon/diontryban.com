@@ -1,0 +1,40 @@
+.column-list {
+    margin: 1rem 0;
+    
+    @media (min-width: 651px) {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        list-style: none;
+        
+        & > li:last-child:nth-child(odd) {
+            grid-column: span 2;
+        }
+        
+        & > li:nth-child(even) {
+            text-align: right;
+        }
+        
+        li > ul {
+            list-style: disc;
+        }
+    }
+    
+    @media (max-width: 650px) {
+        & > li:not(:first-child) {
+            margin-left: 2rem;
+            list-style: circle;
+            
+            &:empty {
+                display: none;
+            }
+            
+            &:has(ul) {
+                &::marker {
+                    color: transparent;
+                }
+                
+                margin-left: 0;
+            }
+        }
+    }
+}

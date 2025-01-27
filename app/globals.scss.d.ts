@@ -1,13 +1,21 @@
-export declare const blue: string;
-export declare const green: string;
-export declare const lavender: string;
-export declare const maroon: string;
-export declare const muave: string;
-export declare const peach: string;
-export declare const pink: string;
-export declare const red: string;
-export declare const rosewater: string;
-export declare const sapphire: string;
-export declare const sky: string;
-export declare const teal: string;
-export declare const yellow: string;
+export type Styles = {
+  'blue': string;
+  'green': string;
+  'lavender': string;
+  'maroon': string;
+  'muave': string;
+  'peach': string;
+  'pink': string;
+  'red': string;
+  'rosewater': string;
+  'sapphire': string;
+  'sky': string;
+  'teal': string;
+  'yellow': string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

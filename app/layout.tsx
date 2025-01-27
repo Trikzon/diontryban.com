@@ -37,7 +37,8 @@ export default function RootLayout({
               <span><strong>Campsites</strong></span>
               <ul>
                 <li><Link href="/">Home</Link></li>
-                <li>Coming Soon!</li>
+                <li><Link href="/resume" className="yellow">Resume</Link></li>
+                <li>Blog Coming Soon!</li>
               </ul>
             </li>
             <li>
