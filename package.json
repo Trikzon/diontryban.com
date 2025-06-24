@@ -1,5 +1,5 @@
 {
-  "name": "diontryban.com",
+  "name": "tryban.dev",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,20 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "@fontsource-variable/vollkorn": "^5.2.8",
+    "next": "15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "the-new-css-reset": "^1.11.3"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "clsx": "^2.1.1",
-    "concurrently": "^9.1.2",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "sass": "^1.83.4",
+    "concurrently": "^9.2.0",
+    "sass": "^1.89.2",
     "typed-scss-modules": "^8.1.1",
     "typescript": "^5"
   }

@@ -1,6 +1,6 @@
-# diontryban.com
+# tryban.dev
 
-The source code for my personal website located at https://diontryban.com.
+The source code for my personal website located at https://tryban.dev
 
 It uses [Next.js](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Content Collections](https://www.content-collections.dev/) for importing MarkDown.
 
