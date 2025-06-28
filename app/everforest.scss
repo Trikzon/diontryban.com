@@ -1,0 +1,66 @@
+// everforest theme colors (https://github.com/sainnhe/everforest)
+:root {
+  color-scheme: light dark;
+
+  --ef-color-bg-dim: #F2EFDF;
+  --ef-color-bg0: #FFFBEF;
+  --ef-color-bg1: #F8F5E4;
+  --ef-color-bg2: #F2EFDF;
+  --ef-color-bg3: #EDEADA;
+  --ef-color-bg4: #E8E5D5;
+  --ef-color-bg5: #BEC5B2;
+
+  --ef-color-bg-red: #FFE7DE;
+  --ef-color-bg-visual: #F0F2D4;
+  --ef-color-bg-yellow: #FEF2D5;
+  --ef-color-bg-green: #F3F5D9;
+  --ef-color-bg-blue: #ECF5ED;
+
+  --ef-color-red: #F85552;
+  --ef-color-orange: #F57D26;
+  --ef-color-yellow: #DFA000;
+  --ef-color-green: #8DA101;
+  --ef-color-blue: #3A94C5;
+  --ef-color-aqua: #35A77C;
+  --ef-color-purple: #DF69BA;
+
+  --ef-color-fg: #5C6A72;
+  --ef-color-statusline1: #93B259;
+  --ef-color-statusline2: #708089;
+  --ef-color-statusline3: #E66868;
+  --ef-color-gray0: #A6B0A0;
+  --ef-color-gray1: #939F91;
+  --ef-color-gray2: #829181;
+
+  @media (prefers-color-scheme: dark) {
+    --ef-color-bg-dim: #1E2326;
+    --ef-color-bg0: #272E33;
+    --ef-color-bg1: #2E383C;
+    --ef-color-bg2: #374145;
+    --ef-color-bg3: #414B50;
+    --ef-color-bg4: #495156;
+    --ef-color-bg5: #4F5B58;
+
+    --ef-color-bg-red: #4C3743;
+    --ef-color-bg-visual: #493B40;
+    --ef-color-bg-yellow: #45443C;
+    --ef-color-bg-green: #3C4841;
+    --ef-color-bg-blue: #384B55;
+
+    --ef-color-red: #E67E80;
+    --ef-color-orange: #E69875;
+    --ef-color-yellow: #DBBC7F;
+    --ef-color-green: #A7C080;
+    --ef-color-blue: #7FBBB3;
+    --ef-color-aqua: #83C092;
+    --ef-color-purple: #D699B6;
+
+    --ef-color-fg: #D3C6AA;
+    --ef-color-statusline1: #A7C080;
+    --ef-color-statusline2: #D3C6AA;
+    --ef-color-statusline3: #E67E80;
+    --ef-color-gray0: #7A8478;
+    --ef-color-gray1: #859289;
+    --ef-color-gray2: #9DA9A0;
+  }
+}

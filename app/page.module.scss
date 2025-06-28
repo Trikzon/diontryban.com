@@ -1,3 +1,19 @@
-.red {
-    color: red;
+.blog-post-li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-bottom: 0.5rem;
+
+  a {
+    flex-grow: 666;
+
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis
+  }
+
+  span {
+    flex-grow: 1;
+  }
 }

@@ -1,5 +1,5 @@
 export type Styles = {
-  'red': string;
+  'blog-post-li': string;
 };
 
 export type ClassNames = keyof Styles;

@@ -1,3 +1,62 @@
-body {
-  font-family: 'Vollkorn Variable', serif;
+@use "./everforest.scss";
+
+:root {
+  --color-background: var(--ef-color-bg0);
+  --color-text: var(--ef-color-fg);
+  --color-accent: var(--ef-color-statusline1);
+  --color-accent: var(--ef-color-statusline1);
+
+  --width-content: 700px;
+
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Vollkorn Variable", serif;
+
+  height: 100vh;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  scrollbar-gutter: stable;
+}
+
+:focus, :focus-visible {
+  outline: revert;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.1rem;
+
+  cursor: pointer;
+
+  &:hover, &:focus {
+    color: var(--color-accent);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+hr {
+  margin: 1rem 0;
+
+  width: 100%;
+
+  border: thin solid var(--color-text);
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
