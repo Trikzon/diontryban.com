@@ -1,3 +1,4 @@
+import { PageUrls } from "@/lib/PageUrls";
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -11,6 +12,9 @@ export default function Home() {
 
   return (
     <>
+      <head>
+        <link rel="indieauth-metadata" href={PageUrls.external.indieauthMetadata()} />
+      </head>
       <h1>Welcome 🏕️</h1>
       <p>
         Hello, my name is Dion. Welcome to my little corner of the internet.

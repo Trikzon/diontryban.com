@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageUrls } from "@/lib/PageUrls";
 import styles from "./layout.module.scss"
 
@@ -7,7 +8,6 @@ import "the-new-css-reset/css/reset.css";
 // Supports weights 400-900
 import "@fontsource-variable/vollkorn";
 import "@/app/globals.scss";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Dion Tryban",

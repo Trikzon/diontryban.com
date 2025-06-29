@@ -5,6 +5,7 @@ export const PageUrls = {
     external: {
         bluesky: () => "https://bsky.app/profile/tryban.dev",
         github: () => "https://github.com/trikzon",
+        indieauthMetadata: () => "https://indieauth.tryban.dev/.well-known/oauth-authorization-server",
         linkedin: () => "https://www.linkedin.com/in/diontryban",
         mastodon: () => "https://peoplemaking.games/@tryban",
         maven: () => "https://maven.tryban.dev",
