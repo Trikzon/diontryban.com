@@ -13,7 +13,9 @@ export default function Home() {
   return (
     <>
       <head>
-        <link rel="indieauth-metadata" href={PageUrls.external.indieauthMetadata()} />
+         <link rel="indieauth-metadata" href={PageUrls.external.indieauthMetadata()} />
+	 <link rel="authorization_endpoint" href="https://indieauth.tryban.dev/auth" />
+	 <link rel="token_endpoint" href="https://indieauth.tryban.dev/token" />
       </head>
       <h1>Welcome 🏕️</h1>
       <p>
