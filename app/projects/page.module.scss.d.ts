@@ -6,6 +6,7 @@ export type Styles = {
   'summary': string;
   'tag': string;
   'tags': string;
+  'year-hr': string;
 };
 
 export type ClassNames = keyof Styles;

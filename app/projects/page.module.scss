@@ -1,3 +1,7 @@
+.year-hr {
+  text-align: center;
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
@@ -16,6 +20,11 @@
       img {
         background-color: var(--color-surface);
         border-radius: var(--radius-border);
+        border: 2px solid var(--color-border);
+
+        &:hover, &:focus {
+          border-color: var(--color-accent);
+        }
       }
 
       @media (max-width: 748px) {

@@ -5,6 +5,7 @@
   --color-surface: var(--ef-color-bg1);
   --color-text: var(--ef-color-fg);
   --color-accent: var(--ef-color-statusline1);
+  --color-border: var(--ef-color-gray0);
 
   --font-serif: "Vollkorn Variable", serif;
   --font-mono: "Fira Mono", monospace;
@@ -56,7 +57,7 @@ hr {
 
   width: 100%;
 
-  border: thin solid var(--color-text);
+  border: thin solid var(--color-border);
 }
 
 p {
