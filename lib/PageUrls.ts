@@ -2,6 +2,7 @@
 // Stored as functions because some urls might take parameters.
 export const PageUrls = {
     home: () => "/",
+    projects: () => "/projects",
     external: {
         bluesky: () => "https://bsky.app/profile/tryban.dev",
         github: () => "https://github.com/trikzon",

@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/vollkorn':
         specifier: ^5.2.8
         version: 5.2.8
+      '@fontsource/fira-mono':
+        specifier: ^5.2.6
+        version: 5.2.6
       next:
         specifier: 15.3.4
         version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.89.2)
@@ -185,6 +188,9 @@ packages:
 
   '@fontsource-variable/vollkorn@5.2.8':
     resolution: {integrity: sha512-xILEmrsSNr/5SBFIca4nCt6DUJFYwQRWSX2UjGJxuq/jefQasSL+D9h5k38sXKi4lUZ2xtvCxzQXfXn3EM5Iyg==}
+
+  '@fontsource/fira-mono@5.2.6':
+    resolution: {integrity: sha512-6pyiGeFH+5DP5sICSwx5wu+9BlTEMTKki7bTppsEqXJysi1MiK82n6oSUaYkQWRLH51+DK7zv2JJsi82cOIS3g==}
 
   '@img/sharp-darwin-arm64@0.34.2':
     resolution: {integrity: sha512-OfXHZPppddivUJnqyKoi5YVeHRkkNE2zUFT2gbpKxp/JZCFYEYubnMg+gOp6lWfasPrTS+KPosKqdI+ELYVDtg==}
@@ -1014,6 +1020,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/vollkorn@5.2.8': {}
+
+  '@fontsource/fira-mono@5.2.6': {}
 
   '@img/sharp-darwin-arm64@0.34.2':
     optionalDependencies:

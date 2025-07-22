@@ -5,6 +5,7 @@ import styles from "./layout.module.scss"
 
 // ===== Global CSS imports ===== //
 import "the-new-css-reset/css/reset.css";
+import "@fontsource/fira-mono";
 // Supports weights 400-900
 import "@fontsource-variable/vollkorn";
 import "@/app/globals.scss";
@@ -39,7 +40,7 @@ export default function RootLayout({
                 <ul className={styles["nav-list"]}>
                   <li><a href={PageUrls.home()}>Home</a></li>
                   <li><span>Blog</span></li>
-                  <li><span>Projects</span></li>
+                  <li><a href={PageUrls.projects()}>Projects</a></li>
                   <li><span>Resume</span></li>
                 </ul>
               </li>

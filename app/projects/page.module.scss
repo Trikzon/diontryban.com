@@ -1,0 +1,56 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin: 1rem 0;
+
+  .project {
+    display: flex;
+    gap: 0.5rem;
+
+    .logo {
+      max-width: 6rem;
+      max-height: 6rem;
+
+      img {
+        background-color: var(--color-surface);
+        border-radius: var(--radius-border);
+      }
+
+      @media (max-width: 748px) {
+        display: none;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      .summary {
+        margin-top: 0.25rem;
+      }
+
+      .tags {
+        display: flex;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+
+        margin-top: auto;
+
+        font-family: var(--font-mono);
+
+        .tag {
+          padding: 0 0.5rem;
+
+          font-size: 0.725rem;
+
+          background-color: var(--color-surface);
+          border-radius: var(--radius-border);
+        }
+      }
+    }
+  }
+}
+
