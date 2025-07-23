@@ -10,8 +10,8 @@ const projects = defineCollection({
     title: z.string(),
     slug: z.string(),
     summary: z.string(),
-    tags: z.string().array(),
     dateStarted: z.coerce.date(),
+    published: z.boolean().optional().default(true),
   }),
   transform: async (document, context) => {
     const mdx = await compileMDX(context, document);

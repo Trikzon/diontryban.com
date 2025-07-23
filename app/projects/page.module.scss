@@ -17,14 +17,16 @@
       max-width: 6rem;
       max-height: 6rem;
 
-      img {
-        background-color: var(--color-surface);
-        border-radius: var(--radius-border);
-        border: 2px solid var(--color-border);
+      background-color: var(--color-surface);
+      border-radius: var(--radius-border);
+      border: 2px solid var(--color-border);
 
-        &:hover, &:focus {
-          border-color: var(--color-accent);
-        }
+      img {
+        border-radius: var(--radius-border);
+      }
+
+      &:is(a):hover, &:is(a):focus {
+        border-color: var(--color-accent);
       }
 
       @media (max-width: 748px) {

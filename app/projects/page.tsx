@@ -22,6 +22,8 @@ const Projects = () => {
 
   const sortedYears = Object.keys(projectsByYear).map(Number).sort((a, b) => b - a);
 
+  const tags = ["completed", "godot", "school", "mc-mods"];
+
   return (
     <>
       <h1>Projects</h1>
@@ -35,20 +37,30 @@ const Projects = () => {
           <ul className={styles["project-list"]}>
             {projectsByYear[year].map((project) => (
               <li key={project.slug} className={styles.project}>
-                <a href={`/projects/${project.slug}`} className={styles.logo}>
-                  <img src={`/projects/${project.slug}/logo.png`} alt={`${project.title} logo`} />
-                </a>
+                {project.published ? (
+                  <a href={`/projects/${project.slug}`} className={styles.logo}>
+                    <img src={`/projects/${project.slug}/logo.png`} alt={`${project.title} logo`} />
+                  </a>
+                ) : (
+                  <div className={styles.logo}>
+                    <img src={`/projects/${project.slug}/logo.png`} alt={`${project.title} logo`} />
+                  </div>
+                )}
                 <div className={styles.info}>
                   <h2>
-                    <a href={`/projects/${project.slug}`}>
-                      {project.title}
-                    </a>
+                    {project.published ? (
+                      <a href={`/projects/${project.slug}`}>
+                        {project.title}
+                      </a>
+                    ) : (
+                        <>{project.title}</>
+                    )}
                   </h2>
                   <div className={styles.summary}>
                     {project.summary}
                   </div>
                   <div className={styles.tags}>
-                    {project.tags.map((tag) => (
+                    {tags.map((tag) => (
                       <div key={`${project.slug}#${tag}`} className={styles.tag}>
                         #{tag}
                       </div>

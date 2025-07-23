@@ -7,9 +7,11 @@ interface Props {
 }
 
 export const generateStaticParams = async () => {
-  return allProjects.map((project) => ({
-    slug: project.slug,
-  }));
+  return allProjects
+    .filter((project) => project.published)
+    .map((project) => ({
+      slug: project.slug,
+    }));
 }
 
 const ProjectPage = async (props: Props) => {
@@ -17,7 +19,7 @@ const ProjectPage = async (props: Props) => {
 
   const project = allProjects.find((project) => project.slug === slug);
 
-  if (!project) {
+  if (!project || !project.published) {
     notFound();
   }
 
