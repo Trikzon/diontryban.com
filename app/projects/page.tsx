@@ -1,45 +1,21 @@
+import { allProjects, Project } from "content-collections";
 import styles from "./page.module.scss";
 
-interface Project {
-  title: string;
-  slug: string;
-  summary: string;
-  tags: string[];
-  dateStarted: Date;
-}
-
 const Projects = () => {
-  const allProjects: Project[] = [
-    {
-      title: "tryban.dev",
-      slug: "tryban-dev",
-      summary: "This website! Built with Next.js, React, and Content Collections.",
-      tags: ["completed", "godot", "school", "mc-mod"],
-      dateStarted: new Date("2025-01-01"),
-    },
-    {
-      title: "Ash API",
-      slug: "ash-api",
-      summary: "A Minecraft mod library that wraps around the Fabric and Neoforge modloader APIs.",
-      tags: ["completed", "godot", "school", "mc-mod"],
-      dateStarted: new Date("2023-01-01"),
-    },
-  ];
-
   const sortedProjects = allProjects.sort(
     (a, b) => b.dateStarted.getTime() - a.dateStarted.getTime()
   );
 
   const projectsByYear = sortedProjects.reduce(
-    (acc, project) => {
+    (map, project) => {
       const year = project.dateStarted.getUTCFullYear();
 
-      if (!acc[year]) {
-        acc[year] = [];
+      if (!map[year]) {
+        map[year] = [];
       }
-      acc[year].push(project);
+      map[year].push(project);
 
-      return acc;
+      return map;
     },
     {} as Record<number, Project[]>
   );
@@ -64,7 +40,7 @@ const Projects = () => {
                 </a>
                 <div className={styles.info}>
                   <h2>
-                    <a href={`/project/${project.slug}`}>
+                    <a href={`/projects/${project.slug}`}>
                       {project.title}
                     </a>
                   </h2>
