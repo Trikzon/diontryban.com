@@ -3,12 +3,12 @@ import styles from "./page.module.scss";
 
 const Projects = () => {
   const sortedProjects = allProjects.sort(
-    (a, b) => b.dateStarted.getTime() - a.dateStarted.getTime()
+    (a, b) => b.dateCreated.getTime() - a.dateCreated.getTime()
   );
 
   const projectsByYear = sortedProjects.reduce(
     (map, project) => {
-      const year = project.dateStarted.getUTCFullYear();
+      const year = project.dateCreated.getUTCFullYear();
 
       if (!map[year]) {
         map[year] = [];
@@ -29,11 +29,6 @@ const Projects = () => {
       <h1>Projects</h1>
       {sortedYears.map((year, index) => (
         <div key={year}>
-          {index != 0 && 
-            <div className={styles["year-hr"]} role="separator" aria-orientation="horizontal" aria-label={`${year}`}>
-              —{year}—
-            </div>
-          }
           <ul className={styles["project-list"]}>
             {projectsByYear[year].map((project) => (
               <li key={project.slug} className={styles.project}>
@@ -70,6 +65,11 @@ const Projects = () => {
               </li>
             ))}
           </ul>
+          {index != sortedYears.length - 1 && 
+            <div className={styles["year-hr"]} role="separator" aria-orientation="horizontal" aria-label={`${year}`}>
+              —{year}—
+            </div>
+          }
         </div>
       ))}
     </>

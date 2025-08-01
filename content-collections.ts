@@ -10,7 +10,7 @@ const projects = defineCollection({
     title: z.string(),
     slug: z.string(),
     summary: z.string(),
-    dateStarted: z.coerce.date(),
+    dateCreated: z.coerce.date(),
     published: z.boolean().optional().default(true),
   }),
   transform: async (document, context) => {
