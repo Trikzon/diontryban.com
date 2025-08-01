@@ -22,8 +22,6 @@ const Projects = () => {
 
   const sortedYears = Object.keys(projectsByYear).map(Number).sort((a, b) => b - a);
 
-  const tags = ["completed", "godot", "school", "mc-mods"];
-
   return (
     <>
       <h1>Projects</h1>
@@ -55,9 +53,9 @@ const Projects = () => {
                     {project.summary}
                   </div>
                   <div className={styles.tags}>
-                    {tags.map((tag) => (
+                    {project.tags.map((tag) => (
                       <div key={`${project.slug}#${tag}`} className={styles.tag}>
-                        #{tag}
+                        {tag}
                       </div>
                     ))}
                   </div>
