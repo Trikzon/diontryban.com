@@ -1,3 +1,5 @@
+# tryban.dev HAS MOVED TO [CODEBERG](https://codeberg.org/trikzon/tryban.dev)
+
 # tryban.dev
 
 The source code for my personal website located at https://tryban.dev
